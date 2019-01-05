@@ -1,0 +1,68 @@
+Topologically proctected twist in the wave function:
+In the famous TKNN paper and subsequents the authors wisely argue that the transversal conductance has a topological interpretation as the integral of a certain curvature of a connection on the Brillouin zone which happens to coincide with the first Chern number for a $U(1)$ principal bundle on a manifold (torus). In particoular Kohmoto justifies the quatization of the TKNN invariant with the following argoument:
+Let's $\psi_{\mathbf{k}} ( \mathbf{x} )$ be the wave function in the Brilloiun zone associated with $\mathbf{k}$ quasimomentum. He choses a section of the bundle such that $\psi_{\mathbf{k}} ( \mathbf{x}_0 )$ at fixed $\mathbf{x}_0$ is real. This of course doesn't work an the points where the wavefunction nullify. So he encircles them and defines the connection $A$ smoothly inside and outside the circles, with different prescriptions. He then applies Stoke's theorem to this situation getting a sum of line integral of the difference between the connection inside and outside the circles encompassing the singularities:
+
+\[
+\sigma_{xy} = \sum_{i} \int_{\partial S_i} ( \mathbf{A}_{out} - \mathbf{A}_{in} ) \cdot \mathbf{d l}  
+\]
+
+The difference of the connections is due to the discontinous choice of the phase: 
+
+[\
+\psi_{\mathbf{k}}^{out} = e^{i f(\mathbf{k})} \psi_{\mathbf{k}}^{in}
+\]
+
+$e^{i f(\mathbf{k})}$ needs to be single valued but f(\mathbf{k}) needn't! If the function $f$ is differentiable then we can write a gauge transformation for the potential $A$ which looks like:
+
+\[
+\mathbf{A}_{out} = \mathbf{A}_{in} + \nabla f
+\]
+
+then the total conductivity becomes:
+
+\[
+\sigma_{xy} = \sum_{i} \int_{\partial S_i} ( \nabla f) \cdot \mathbf{d l}  
+\]
+
+now the requirement for the phase difference to be well defined fixes each integral to be $2 \pi n$. 
+
+I've alway forgetten constants in my derivations, so don't mind the extra $2 \pi$ that happears. Here we come to my questions:
+
+\begin{itemize}
+\item Is the smoothness hypothesis on $f$ well motivated? 
+\item This arguments shows the quantization of the integral but don't show the stability under smooth variation of $\psi_{\mathbf{k}}$ which I expect indeed to be true.
+\end{itemize}
+
+Please, I don't know advanced maths and I cannot follow real mathematical general motivations one can find on topology books. I was looking for a more down to earth justification. 
+
+Thanks in advance!
+
+Topological solitons in general dimension:
+Lets begin with a simple model of a field theory:
+
+$
+\mathcal{H} = \int ( \nabla \phi ) ^2
+$
+
+where $\phi$ is an angle valued field defined on some space. We suppose for the moment to freeze out the temporal dimention.
+
+The usual argument that is employed to introduce the topological defects is to consider a configuration of the field:
+
+$\phi: D^d \rightarrow U(1)$
+
+where $D^d$ is the $d$-dimentional disc. The boundary conditions are given by a \emph{smooth} function:
+
+$\phi_0: D^d \rightarrow U(1)$
+
+The functions $\psi_0$ (up to smooth deformations) can be classified by the elements of the homotopy group $\pi_{d-1} \left( U(1) \right)$.
+
+By this argument one can see that for this field theory there are no domain walls (which is associated to the fact that $U(1)$ is connected) but there can be vortex (and antivortex), non monopoles, ...
+
+Vortex solutions are possible in 2D. I know that this theory can support vortex also in 3D in the form of an extended 1D singularity. The argument above doesn't seem to contain this case because a 1D vortex in a 3D fluid will produce boundary conditions on $S^2$ which are outside the hypothesis of smoothness. Indeed one would have two singularities at the two extremum of the 1D string.
+Unless one has a vortex which closes onto itself by gluing the end and the beginning into a cicle. This way one would have a smooth boundary contition I think.
+
+My question now is how to properly take in account the existance of those defects in dimensions different from the one they give smooth boundary contition. As an example: How can I theoretically justify the presence of 1D vortex in a 3D fluid when the precedent justification (by definition basically) only allows vortex in 2D?
+
+
+
+

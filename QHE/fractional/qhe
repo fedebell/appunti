@@ -1,0 +1,33 @@
+La spiegazione del'integer quantum hall effect più sensata che si trova è prendere una geometria toroidale in cui due flussi attraversano i due buchi del toro e quasto punto calcolare a conduttanza come curvatura della connessione di berry. A questo punto si può dimostrare che nel limite termodinamico la conduttanza non può dipendere da dai flussi che attraversano i due buchi del toro, dunque è possibile prendere la media rispetto a questo trivando proprio un integrale nella forma di Chern. Ci sono alcuni punti di singolarità in cui potrebbe fallire la trivializzazione del principal bundle dunque intorno a questi punti eseguiamo un'altra scelta di gauge. In qualche modo dimostro che il numero deve essere intero. Tuttavia questo deve valere solo se il ptenziale chimico si trova in un gap. Da qualche parte questa ipotesi deve essere stata fatta e infatti serve a dismotrare l'insensitività dalle condizioni iniziali. E' necessario forse anche il limite termodinamico (dopo assumo di avere un sistema finito...)
+In ogni caso una volta dimostrato che il numero di chern è intero la satbilità segue: supponiamo di avere un sistema finito (non al limite termodinamico (in effetti)) se cambio i parametri in modo che siano ancora vere le ipotesi il numero di Chern deve essere un intero. Dunque poiché la conduttazione può solo cambiare con continuità in un sistema finito llora non può cambiare a meno che le variazioni dei parametri non falsifichino le ipotesi. In tale caso allora cambia. Argomenti successivi a quello di Kohomoto mostano come la quantizazione sia insensibile anche al disordine in effetti. le interazioni causano ei plateau aggiuntivi ma non rimuovono quelli già presenti. Un'altra cosa da chiedersi dove esattamente entra in gioco l'ipotesi di essere in un gap nell'analisi di Thoulesse. Probabilmente nel dimsotrare l'insensitività alla condizioni al bordo.
+
+Il metodo più fisicamente chiaro per dimostare l'integer è l'argomento di laughlin a pompa.
+
+More on the presentation on the quantum hall:
+-Review on the various possibilities of explaining the integer quantum hall
+-Laughlin pumping argument
+-Thouless Chern-Kubo formula (calculation of a response function) and we show it is topological
+-Edge chilal modes (parlare di elettroni in una dimensione e eventualmente del teorema di nialsen ninyoma). dico rgomento intiutivo del teorema di NN. Ma non scendo nei dettagli sul perché il IQHE lo viola
+
+Fractional:
+
+Interazione piccola e degerazione dei fractional filled level:
+
+-Laughlin ansatz (plasma analogici e il fatto che è un liquido nonostante la competing wigner phase)
+-laughlin pumping argument modified
+-eccitations are anyons (introducing anyons) and transposrt a fractional charge (we can see it in shot noise experiments)
+
+-composite fermions and chern simons meand filed theory: the fqhe as an inter quantum hall effeft of composite fermions: how about 11/4: this is a FQHE of composite fermions... yes composite composite fermions.
+
+- what about non abelian anyons? and plateau of even denominator? jest an introduction indeed. (braiding groups magari just citare)
+
+-what about the missing plateau?
+
+-say something about efftive field theory (one can see that it gives expliitely rise to the chiral edge modes)
+
+-say nothing about chiral edeg modes from tong in effect.
+
+
+RICORDARSI DI AGGIUNGERE UN PO' di COMMENTI A CASO E FIGURE CHE POSSANO COLLEARSI ALLA FISICA. leggersi tutto: https://arxiv.org/pdf/0909.1998.pdf che ha molti collegamenti con la fisica
+e solo dopo inziare a produrre la prsentazione.
+
