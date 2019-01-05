@@ -1,0 +1,14 @@
+Domande che mi fanno:
+-Quale è il ruolo dell'ipotesi di unbiasedness in classical cramer rao.
+-Dovrei accennare al fatto che in effetti lo stimatore di masssima likelyhood non è unbiased ma il bias scende come 1/N quindi di fatto il comportamento asintotico del limite di cramer rao è sempre 1/N
+-Dovrei capire da dove vengono le due espressoni in termini della bures metric
+-Cosa succede se entanglo le probes dopo essere passate per il canale quantistico?
+-perché la qfi per un stato puro viene la varianza?
+-dire da che parametri dipendono le quantità che compaiono nella dimostrazione di fujiwara? tipo b>0...
+-N^{0}_{tot} dipende da \epsilon in maniera non banale??
+-COme si scriverebbe in italiano infinitely often?
+-La simmetric logarithmic derivative semobra un po' une evoluzione temporale della matrice di densità... come si collega?
+-Attenzione: GHZ NON è  SPIN SQUEEZED!!! 
+-Non si vede veramente nulla di adattivo nella dimostrazione che do. Devo dire a voce che la FI è il valore atteso della derivata della likelyhood sono a fisher informazion per ogni singola misura e queste tendono alla QFI in modo che alla fine la media delle FI 
+-Esiste un modo semplice di vedere che la QFI di uno stato puro è la varianza?? Non credo veine da definizione complicata con SLD
+-IMPORTANTE: Devi dire che in QM le misure sono distruttive ed è necessario usare più probes !!!!!!!!!!!!

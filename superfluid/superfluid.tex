@@ -1,0 +1,194 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools,slashed}
+\usepackage{braket}
+\usepackage{abstract}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\sisetup{load-configurations = abbreviations}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Federico Belliardo}
+\title{Appunti sull'elio superfluido}
+\begin{document}
+\maketitle
+\begin{abstract}
+In questo breve testo i giustificherà l'introduzione del modello a due fluidi per lo studio dell'elio superfluido.
+\end{abstract}
+
+\section{Introduzione}
+Il sistema è costituito da un insieme di atomo di elio-4 (bosoni) non relativistici e fortemente interagenti. In generale l'Hamiltoniana si può scrivere come:
+
+\begin{equation}
+\mathcal{H} = \sum_{i} \frac{\mathbf{p}_i}{2 m} + \sum_{i < j} V \left( \bold{x}_i - \mathbf{x}_j \right) 
+\end{equation}
+
+un liquido è un sistema in effetti molto complicato da trattare in termini analitici perché non si possono considerare piccole le interazioni tra gli atomi come per il gas ma queste non sono abbastanza forti da mantenerli fermi nel reticolo cristallino come nei solidi. E' in generale impossibile diagonalizzare questa Hamiltoniana. 
+
+L'impulso totale si scrive:
+
+\begin{equation}
+\mathbf{P} = \sum_{i} \mathbf{p}_{i}
+\end{equation}
+
+\section{Introduzione delle quasiparticelle}
+In un sistema di atomi uguali interagenti con potenziali armonici si può diagonalizzare esattamente l'Hamiltoniana introducendo i fononi, dotati di una particolare legge di dispersione. Landau suppone di poter fare un procedimento simile anche per il superfluido (con un relazione di dispersione più complicata), dunque abbiamo:
+
+\begin{equation}
+\mathcal{H} = \sum_{\mathbf{p}} \epsilon \left( \mathbf{p} \right) a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}}
+\end{equation}
+
+\begin{equation}
+\mathbf{P} = \sum_{\mathbf{p}} \mathbf{p} a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} 
+\end{equation}
+
+Procedendo più sistematicamente si arriva alla teoria del liquido di Landau-Fermi che in effetti dice che la diagonalizzazione fatta non è esatta ma vi sono dei termini di interazione tra le particelle proporzionali almeno al quadrato della densità di quasiparticelle. Supponendo di avere poche eccitazioni possiamo trattare il gas come non interagente e accontentarci di questa Hamiltoniana diagonale.
+
+Landau scrive l'Hamiltoniana sopra senza termini di ``impulso del vuoto'', infatti in assenza di eccitazioni l'energia e l'impulso del fluido nel ground state sono nulli. Questo significa che mi trovo nel sistema di riposo del fluido in cui è assente il moto globale. In generale infatti vi sarebbe un modo zero che considera le traslazioni collettive e uniformi del sistema alla quale si sovrappongono le quasiparticelle. Ma questo termine è assente nelle equazioni di sopra.
+\section{Fluido in movimento}
+Eseguiamo una trasformazione attiva con un boost di Galileo di velocità $\mathbf{v}_s$ che agisce sia sull'Hamiltoniana che sull'impulso, in modo da descrivere un fluido in moto. $G = e^{\frac{m}{\hbar} \math{v}_s \cdot \sum_{i} \bold{r}_i$ è l'operatore che aggiunge la costante $m \mathbf{v}_s$ agli impulsi di ogni particella del fluido. Scriviamo i nuovi operatori:
+
+\begin{equation}
+\mathcal{H}' = \mathcal{H} + \mathbf{P} \cdot \mathbf{v}_s + \frac{1}{2}M\mathbf{v}_s^2
+\end{equation}
+
+\begin{equation}
+\mathbf{P}' = \mathbf{P} + M \mathbf{v}_s
+\end{equation}
+
+dove $M$ è la massa di tutti gli atomi di elio: $M = \sum_ {i} m_i$.
+
+Diagonalizziamo gli operatori originali come prima:
+
+\[
+\mathcal{H}' = \sum_{\mathbf{p}} \epsilon \left( \mathbf{p} \right) a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}}  + \sum_{\mathbf{p}} \mathbf{p} a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} \cdot \mathbf{v}_s + \frac{1}{2}M\mathbf{v}_s^2
+\]
+
+Si possono raccogliere i due termini che moltiplicano l'operatore numero di particelle:
+
+\begin{equation}
+\mathcal{H}' = \sum_{\mathbf{p}} \left[ \epsilon \left( \mathbf{p} \right)+\mathbf{p} \cdot \mathbf{v}_s \right] a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} + \frac{1}{2}M\mathbf{v}_s^2
+\end{equation}
+
+\begin{equation}
+\mathbf{P}' = \sum_{\mathbf{p}} \mathbf{p} a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} + M \mathbf{v}_s
+\end{equation}
+
+Vediamo che dopo il boost si può descrivere l'energia e l'impulso del fluido in termini di quasiparticelle che trasportano impulso $\mathbf{p}$ e aventi una relazione di dispersione: 
+\[\epsilon^{'} \left( \mathbf{p} \right) =  \epsilon \left( \mathbf{p} \right)+\mathbf{p} \cdot \mathbf{v}_s\]
+
+All'impulso delle quasiparticelle si somma però un termine costante dovuto al moto del ground state. Per questo sistema il ground state non è invariante per boost (come nella teoria dei campi fondamentali), per questo vi sono quei due termini $\frac{1}{2}M\mathbf{v}_s^2$ e $M \mathbf{v}_s$.
+
+\section{Imposizione di una velocità media del fluido normale}
+
+Ora seguendo la procedura standard introduciamo un moltiplicatore di Lagrange $\boldsymbol{\lambda}$ per fissare la velocità media del gas di quasiparticelle nell'ensemble:
+
+\begin{equation}
+\rho \propto e^{-\beta \mathcal{H} - \boldsymbol{\lambda} \cdot \mathbf{P}}
+\end{equation}
+
+Prestiamo attenzione al fatto che questo non è una modifica dell'Hamiltoniana. %Quasiparticelle aventi stesso modulo dell'impulso ma direzione diversa hanno stessa energia e quindi sono favorite allo stesso modo nell'ensamble. Ci aspettiamo dunque che se $\boldsymbol{\lambda} = 0$ il valore medio di $\mathbf{P}$ sia nullo.
+
+
+Quello di fissare un valore medio dell'impulso è una richiesta che facciamo per descrivere con un appropriato ensamble la fisica che osserviamo esattamente come richiediamo che il valore medio dell'energia sia fissato per descrivere i sistemi termalizzati. 
+
+\section{Modello a due fluidi}
+Calcoliamo il valore medio dell'impulso sull'ensamble costruito:
+
+\begin{equation}
+\left< \mathbf{P'} \right> = \left< \sum_{\mathbf{p}} \mathbf{p} a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} \right> + M \mathbf{v}_s
+\end{equation}
+
+L'ultimo termine è una costante e non necessita di essere mediato sull'ensamble.
+
+Le quasiparticelle sono bosoniche e trascurando una costante nell'Hamiltoniana possiamo scrivere la loro distribuzione in impulso come:
+
+\begin{equation}
+n \left( \mathbf{p} \right) = \frac{1}{e^{\beta \left[ \epsilon ( \mathbf{p} ) + \mathbf{p} \cdot \mathbf{v}_s - \mathbf{p} \cdot \boldsymbol{\lambda} \right]} - 1}
+\end{equation}
+
+Il termine dipendente dal moltiplicatore di Lagrange $\boldsymbol{\lambda}$ si fattorizza sulle quasiparticelle come quello introdotto dal boost e di fatto definisce un'Hamiltoniana efficace.
+
+Possiamo scegliere di definire per comodità:
+
+\[
+n \left( \epsilon \right) = \frac{1}{e^{\beta \epsilon} - 1}
+\]
+
+per esprimere la distribuzione delle quasiparticelle del superfluido come:
+$ n (\epsilon + \mathbf{p} \cdot \mathbf{v}_s -  - \mathbf{p} \cdot \boldsymbol{\lambda})$, dove $\epsilon$ è ovviamente è la relazione di dispersione delle quasiparticelle dipendente dall'impulso.
+
+Dobbiamo calcolare dunque il valore medio dell'impulso totale del gas. Questo si scrive:
+
+\begin{equation}
+\left< \bold{P} \right>_{q.p.} = \left< \sum_{\mathbf{p}} \mathbf{p} a^{\dagger}_{\mathbf{p}} a_{\mathbf{p}} \right> = V \int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \mathbf{p} \; n \left( \mathbf{\epsilon + \mathbf{p} \cdot \mathbf{v}_s - \mathbf{p} \cdot \boldsymbol{\lambda}} \right) 
+\end{equation}
+
+Ora se la velocità del superfluido $\mathbf{v}_s$ e il moltiplicatore sono sufficientemente piccoli i termini $\mathbf{p} \cdot \mathbf{v}_s - \mathbf{p} \cdot \boldsymbol{\lambda}$ sono una piccola correzione di $\epsilon$, dunque otteniamo:
+
+\[
+n \left( \mathbf{\epsilon + \mathbf{p} \cdot \mathbf{v}_s - \mathbf{p} \cdot \boldsymbol{\lambda}} \right)  \sim n \left( \mathbf{\epsilon} \right) + \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \left( \mathbf{p} \cdot \mathbf{v}_s - \mathbf{p} \cdot \boldsymbol{\lambda} \right)
+\]
+
+Poiché l'impulso medio del gas di particelle è nullo se $\mathbf{v}_s = \boldsymbol{\lambda} = 0$, otteniamo:
+
+\begin{equation}
+\left< \bold{P} \right>_{q.p.} = V \int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \; p_i p_j \left( v_s - \lambda \right)_j
+\end{equation}
+
+Calcoliamo l'integrale:
+
+\[
+V \int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \; p_i p_j = \frac{V}{3}\int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \; p^2 \delta_{ij}
+\]
+
+\begin{equation}
+\left< \bold{P} \right>_{q.p.} = \frac{V}{3}\int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \; p^2 \left( \mathbf{v}_s - \boldsymbol{\lambda} \right)
+\end{equation}
+
+
+A questo punto definiamo: 
+
+\begin{equation}
+\rho_{n} =  - \frac{1}{3}\int \frac{d^3 \bold{p}}{( 2 \pi \hbar)^3} \; \frac{\partial  n \left( \mathbf{\epsilon} \right)}{\partial \epsilon} \; p
+\end{equation}
+
+Otteniamo:
+
+\begin{equation}
+\left< \bold{P} \right>_{q.p.} = - V \rho_n \left( \mathbf{v}_s - \boldsymbol{\lambda} \right)
+\end{equation}
+
+Sotituiamolo nell'equazione per il valore medio della densità volumica di impulso totale (non solo quasiparticelle):
+
+\begin{equation}
+\frac{\left< \mathbf{P} \right>}{V} =  - \rho_n \left( \mathbf{v}_s - \boldsymbol{\lambda} \right) + \rho \mathbf{v}_s
+\end{equation}
+
+dove $\rho$ è densità vera dell'elio-4.
+
+Definiamo: $\rho_s = \rho - \rho_n$, dunque abbiamo:
+
+\[
+\frac{\left< \mathbf{P} \right>}{V} =  - \rho_n \left( \mathbf{v}_s - \boldsymbol{\lambda} \right) + \left( \rho_n + \rho_s \right) \mathbf{v}_s = \rho_n \boldsymbol{\lambda} + \rho_s \mathbf{v}_s
+\]
+
+E' possibile interpretare $\boldsymbol{\lambda}$ come velocità media delle quasiparticelle nel sistema del laboratorio poiché si vede che in questo sistema il loro contributo alla densità di impulso è proprio la densità volumica di massa per la velocità del fluido normale nel laboratorio. 
+
+Abbiamo dunque ricavato le due equazione dei due fluidi:
+
+\begin{equation}
+\rho = \rho_n + \rho_s
+\end{equation}
+\begin{equation}
+\mathbf{g} = \rho_n \mathbf{v}_n + \rho_s \mathbf{v}_s
+\end{equation}
+
+\end{document}

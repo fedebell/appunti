@@ -1,0 +1,17 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Modelli su reticolo e sviluppi in serie}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Sviluppo a bassa temperatura}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Sviluppo ad alta temperatura}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Somma sui ``polimeri fantasma"}{5}{section.2}
+\contentsline {section}{\numberline {3}Dualit\IeC {\`a} di Kramers-Wannier}{6}{section.3}
+\contentsline {section}{\numberline {4}$\mathbb {Z}_2$ gauged Ising model}{7}{section.4}
+\contentsline {section}{\numberline {5}Dualit\IeC {\`a} in altre dimensioni}{8}{section.5}
+\contentsline {section}{\numberline {6}Il teorema di Elitzur}{9}{section.6}
+\contentsline {section}{\numberline {7}Simmetria di gauge?}{11}{section.7}
+\contentsline {section}{\numberline {8}Introduzione dei Wilson loop}{11}{section.8}
+\contentsline {section}{\numberline {9}Tensione di stringa come parametro d'ordine non locale}{12}{section.9}
+\contentsline {subsection}{\numberline {9.1}Andamento ad alta temperatura}{12}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Andamento a bassa temperatura}{13}{subsection.9.2}
+\contentsline {section}{\numberline {10}Tensione di stringa come parametro d'ordine}{14}{section.10}
+\contentsline {section}{\numberline {11}Conclusioni}{14}{section.11}

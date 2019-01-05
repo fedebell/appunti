@@ -1,0 +1,18 @@
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+
+\bibitem https://arxiv.org/pdf/1109.3128.pdf
+\bibitem Quantum metrology and its application in biology
+\bibitem https://arxiv.org/pdf/1405.4878.pdf
+
+\bibitem[Smith, 2012]{p1} John Smith (2012)
+\end{thebibliography}
+}
+

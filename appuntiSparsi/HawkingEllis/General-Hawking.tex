@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Belliardo Federico}
+\title{Notes on reading "Large scale structure of space-time"}
+\begin{document}
+\maketitle
+\begin{itemize}
+\item p.21 Dato un sistema di vettori $E_a$ nello spazio $T_{p}$  sempre possibile trovare un sistema di coordinate tale che i vettori $\partial_{i}$ associati al sistema di coordinate siano quelli di partenza. Si tratta di determinare n funzioni $x^{\alpha}(x')$ assegnate tutte le loro derivate prime in un punto (perché è assegnata la matrice di cambio base). Questo non può essere fatto se per esempio si assegnano le coordinate di base su un aperto intorno a p.
+
+\item p.23 Revise all stuff on immersion and embedding.
+\item p.24 Prove that pullback and pushforward of tesors commute with tensor product and contractions.
+
+\item p.26 Dimostare che il pullback commuta con la derivata esterna: $\phi_{*}(dA) = d(\phi_{*}A)$.
+
+\item p.26 Clarify (with the help of Baez) where the orientation of the manifold enters in the definition of the integral of an n-form
+
+\item p.27 Proof that of $\phi: M \rightarrow M'$ is a diffeomorfism then $\int_{M'} \phi_{*} A = \int_{M} A$.
+
+\item p.27 The generalized Stokes theorem is sometimes witten as  $\int_{\partial M} \phi_{*} A = \int_{M} dA$. Where $\phi$ is the embedding of the border in the manifold.
+
+\item p.27 Revise induced orientation on the border of $\partial M$.
+
+\item p.28 Vedere con più attenzione la dimostrazione di HE che $\mathcal{L}_{X}Y = [X, Y]$. Mi convince quella di Reall, quindi l'ho saltata. Nota bene che la derivata di Lie commuta con la derivata esterna poiché commuta con il pullback. Se due campi vettoriali hanno commutatore nullo, seguire le linee integrali per due distanze parametrizzanti $(s, t)$ commuta se si segue prima un campo e poi un altro o viceversa. Questo vale anche a livello non infinitesimo, cioè il flusso di due campi vettoriali commuta se e solo se il suo commutatore è nullo: $\Phi_t \circ \Phi_s \circ \Phi_{-t} \circ \Phi_{-s}$ è un percorso chiuso. 
+
+\item p.31 Rileggere tutte le definizioni per bene di derivata covariante che ho saltato.
+
+\item p.33. Una curva $\lambda(t)$ è una geodetica se $\frac{D}{\partial t} (\frac{d}{dt})(t) = 0$. Alternativamente si può dire che se estendo ad un intorno aperto il capo vettoriale $(\frac{d}{dt})(t)$ e lo chiamo $X$ deve valere la condizione $\nabla_{X} X = 0$. Se poi ho un altro campo tensoriale T posso dire che viene \textbf{parallelamente trasportato} lungo $\lambda (t)$ se vale la relazione $\nabla_{\frac{\partial}{\partial} (t)} T = 0$ su tutti i punti della curva. Si può mostre che una curva il cui vettore tangente viene parallelamente trasportato conserva il valore di $g(X, X)$ dunque la caratteristica della curva. La relazione $\nabla_{X} X = 0$ si può sciver in termini delle coordinate della curva (lungo la curva) e mostrano come l'essere curva geodetica non dipende dal modo con cui si è esteso il campo delle velocità.
+La relazione $\nabla_{X} X = 0$ non viene conservata da una riparametrizzione delle coordinate, essa infatti in generale diventa: $\nabla_{X} X = fX$.
+
+\textbf{Appunti sulle coordinate normali Riemanniane}
+L'equazione geodetica in una certa aparametrizzazione affine si scrive $\frac{d^{2}x^{a}}{dt^{2}}+\Gamma^{a}_{bc} \frac{dx^{b}}{dt} \frac{dx^{c}}{dt} = 0$. Dato un certo punto p e un vettore del tangente abbiamo l'esistenza e l'unicità locale di una geodetica che soddisfa le condizioni date. Non faccio proprio nessuna scelta del parametro affine che viene in maniera "naturale". Si valuta dunque la curva in $t = 1$ e i ottiene un punto. Si è quindi trovata una funzione dal fibrato tangente $TM$ ad un intorno aperto di p. Questa mappa è localmente un isomorfismo e si possono assegnare a $\phi(v)$ le coordinate che ha $v$ in una arbitraria base dello spazio tangente. In particolare si può scegliere una base in cui il tensore metrico è Minkowsky. Integrando con gli appunti di Reall si vede che in coordinate normali il tensore metrico è banalizzato e le derivate dei simboli di Christoffel sono nulle.
+
+\item p.33 Abbiamo che se trasportato parallelamente il vattore tangente ad una curva mantiene il suo modulo: $g(\frac{\partial}{\partial t}, \frac{\partial}{\partial t})$.
+
+\item p.34 Quando la torsione è nulla sia la derivata di Lie che la derivata esterna possono essere espresse in termini della derivata covariante dove i simboli di Christoffel si cancellano tra di loro.
+
+\item p.36 Verificare tutte le proprietà del tensore di Riemann  e l'interpretazione geometrica che rappresenta a variazione di un vettore quando segue un loop chiuso trasportato sulle linee integrali di due campi commutanti.
+
+\item p.41 Contare attentamente le componenti indipendenti del tensore di Riemann e capire il tensore di Weyl dimostrandoc he è un invariante conforme.
+
+\item p.44 Dimostrare esplicitamente che i campi vettoriali che sono isometrie per la metrica formano una algebra di Lie, cioè: se $\mathcal{L}_{X} g = 0$ e $\mathcal{L}_{Y} g = 0$ allora anche $\mathcal{L}_{[X, Y]} g = 0$.
+
+\item p.44 Mostrare che il numero massimo di campi vettoriali indipendenti generatori di simmetrie su una varità di dimensione $n$ è $\frac{n(n+1)}{2}$.
+
+\item p.44 Leggere tutta la parte sulle ipersuperfici. Una ipersuperficie non è necessariamente di tipo tempo, spazio o nulla (credo).
+
+\item p.48 Guardare integrazione delle forme di volume (e come sono definite) in particolare capire orientazione della varietà nella definizione generalizzata del teorema di Gauss (è tutto molto pià chiaro sugli appunti di Reall).
+
+\item Leggere parte sui fibre bundles.
+
+\end{itemize}
+
+
+\end{document}

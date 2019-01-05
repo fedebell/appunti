@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Belliardo Federico}
+\title{Note sugli appunti di relatività di Reall}
+\begin{document}
+\maketitle
+
+\begin{itemize}
+
+\item p.34 Fare esercizio alla fine della pagina.
+\item p.36 La derivazione della geodetica funziona anche nel caso di fotoni? Non credo perché in quel caso $G = 0$ sempre e on può stare a denominatore dell'equazione geodetica.
+\item p.38 Cose si può vedere che in generale la geodesica massimizza il tempo proprio?
+\item p.38 La lagrangiana non dovrebbe essere scritta in termini di $\tau$ ma in termini di un parametro $\lambda \in [0, 1]$: $\mathcal{L} = \sqrt{-g_{\mu \nu}(x(\lambda)) \frac{d x^{\mu} (\lambda)}{d \lambda}  \frac{d x^{\nu} (\lambda)}{d \lambda}}$. Si osservi poi che la lagrangiana non ha una dipendenza esplicita da $\lambda$: $\frac{\partial \mathcal{L}}{\partial \lambda} = 0$ questo implica l'esistenza di uan quantità conservata (l'Hamiltoniana): se la si calcola si vede che $-g_{\mu \nu}(x(\lambda)) \frac{d x^{\mu} (\lambda)}{d \lambda}  \frac{d x^{\nu} (\lambda)}{d \lambda}$ deve essere conservata sul moto lungo una geodetica (verificare!)
+\item p.38 Non mi è chiaro perchè si possa scrivere la lagrangiana ed eseguire la variazione in termini del tempo proprio? Non serve un parametro aggiuntivo?
+\item p.41 Mostrare che la differenza di due connessioni è un tensore (1, 2).
+\item p.45 Non mi convince troppo la derivazione di $\nabla_{Y}  Y = fY$, non dovrebbe essere $h:M \rightarrow \mathbb{R}$? Qui sembra che sia  $h:\mathbb{R} \rightarrow \mathbb{R}$
+\item p.46 Postulato della relatività generale è che le particelle si muovono su geodetiche con parametrizzazione affine, cioè su linee integrali di campi vettoriali che soddisfano $\nabla_{X} X = 0$. Da questa equazione si può recuperare l'equazione geodetica prima ottenuta con la lagrangiana. Vi è una riparametrizzazione lineare del tempo affine che ha dunque due parametri liberi, che diventano uno del caso di curve time-like o space-like, imponendo la condizione $g(X, X) = \pm 1$. Nel caso di lice non esiste un tempo proprio ma ho due gradi di libertà nella parametrizzazione. $\nabla_{X} g(X, X) = 0$ Dunque il modulo della quadrivelocità è fissato (e uguale a -1) nel caso di temo proprio. 
+\item p.47 \textbf{Coordiante normali Riemanniane}:
+Dato un punto di una varietà costruisco la geodetica che passa per quel punto e che è tangente al vettore dato risolvendo le opportune equazioni geodetiche. Il tempo affine vale 0 sul punto p. Vi è una libertà di scala nel tempo affine. Localmente   la mappa esponenziale è un isomorfismo e può essere usata per definire un sistema di coordinate normale. Come si fa a fissare consistemente la velocità di tutte le geodetiche.
+Alla fine della dimostrazione si fa vedere che $\Gamma^{\mu}_{\rho \sigma} k^{\rho} k^{\sigma} = 0 \rightarrow \Gamma^{\mu}_{[\rho \sigma]} = 0$: questo perché prendendo $k$ in modo che siano uguali a 1 solo le coordinate corrispondenti al simbolo che vogliamo annullare si vede che segue la tesi. Vanno bene vettori iniziali ti qualunque tipo (anche non fisici).
+\textbf{Vedersele su un libro di geometria, come l'Abate, riportare la dimostrazione di Hawking and Ellis, molto più concisa e apprezzabile}.
+
+\item p.48 Non mi è chiaro perchè in un sistema di coordiante normale il tensore metrico è: $g_{\mu \nu} = \eta_{\mu \nu}$
+
+\item p.54 Dimostrare equazioni di Navier-Stokes relativistiche.
+
+\item p.57 Non capisco dove va a finire la derivata rispetto al  commutatore nell'identità di Ricci.
+
+\item p.58 Dimostrare che se due campi vettoriali X e Y commutano si può trovare un sistema di coordinate in cui $X = \frac{\partial}{\partial s}$ e $Y = \frac{\partial}{\partial t}$. \textbf{Importante da FARE!}
+
+\textbf{Appunti sulla deviazione geodetica}
+Sia data la mappa $\gamma: I \times I' \rightarrow M$ questa definisce una carta in cui le due coordinate della sottovarità sono $(s, t)$. Sia $\gamma(t, s)$ una curva geodetica con t parametro affine per ogni s. Costruisco il campo vettoriale $T$ definendolo in un punto $(s, t)$ come il vettore tangente alla geodetica passante per s e $S$ è il campo vettoriale in ogni punto tangente alla curva $\gamma_{t}(s)$. Per definizione questi due campi vettoriali sono: $S = \frac{\partial}{\partial s}$ e $T = \frac{\partial}{\partial t}$. Essendo vettori di base relativi alle coordinate normali commutano. Si può anche vedere che essendo le loro componenti legate alla derivata dela funzione $\gamma$ in un qualunque sistema di riferimento ho che il commutatore è nullo (se lo scrivo esplicitamente). Come si può anche vedere applicando la definizione in una base generica conoscendo componenti $T^{\mu} = \frac{\partial x^{\mu}(x, t)}{\partial t}$. Vale la relazione: $x^{\mu} (t, s+ds) = x^{\mu} (t, s+ds) + ds S^{\mu} + O(ds^2)$ per definizione stessa di vettore tangente. Quindi $\nabla_{T} S$ quantifica la velocità di allontanamento di due geodetiche mentre $\nabla_{T}\nabla_{T} S$ ne quantifica l'accelerazione. 
+
+Il tensore torsione è definito come: $\mathbf{T} (T, S) = \nabla_{T} S - \nabla_{S} T - [T, S]$. Dunque $\nabla_{T} S = \nabla_{S} T$ e quindi   $\nabla_{T}\nabla_{T} S = \nabla_{T}\nabla_{S} T$ = $\nabla_{S}\nabla_{T} T + \mathbf{R}(T,S)T = \mathbf{R}(T,S)T$. L'equazione geodetica è:  $\nabla_{T}\nabla_{T} S = \mathbf{R}(T,S)T$.
+
+Caveat: la parametrizzazione che abbiamo dato è solamente bidimensionale. E' ncessario introdurre tanti vettori deviazioni quante sono le dimensioni del possibile "fascio" di geodetiche che costruiamo. Così che tutti i campi vettoriali che studio siano definiti in un intorno aperto (a parte interna non nulla) della varietà spazio-tempo. Si può anche studiare come cambia il volume di un "bunch" di geodetiche che evolvono vicine, vedi Carroll e Baez ("The meaning of Einstein Equation").
+
+\item p.58 Rivedere calcolo della non commutatività delle derivate covarianti rispetto a campi vettoriali a commutatore nullo, per mostrare che il trasporto parallelo su loop chiuso seguendo le geodetiche di due diversi campi vettoriali commutanti è legato al tensore di Riemann.
+
+\item p.62 Svolgere gli esercizi sul tensore di Riemann.
+
+\item p.63 Dimostrare la contracted Bianchi identity.
+\item p.64 Approfondire il teorema di Lovelock.
+
+\item p.68/69 Eseguire i calcoli per trovare le componenti di generico tensore in seguito a pullback e pushforward.
+
+\textbf{Nota sui tensori}
+Un covettore è definito come una funzione lineare $TM \rightarrow \mathbb{R}$, mentre in virtù dell'isomorfismo canonico con il biduale si può definire un vettore come una funzione $TM^{*} \rightarrow \mathbb{R}$. Un tensore è definito come una funzione $TM \times TM ... TM^{*} \times TM^{*} \rightarrow \mathbb{R}$ lineare. Questa è la giusta definizione di tensore dalla geometria. Ma come si lega con la definione algebrica mediante la proprietà universale?
+
+\textbf{Finire}: le due definizioni che ho in mente probabilmente si legano grazie alla proprietà universale.
+
+\item p.69 Dimostrare che i pullback e pushforward commutano con la contrazione e il prodotto tensore.
+
+\item p.72 Dimostrare esplicitamente che la mappa esponenziale del campo vettoriale X è localmente un isomorfismo.
+
+\item p.72 Mostrare che localmente esiste una superficie che è sempre ortogonale al campo vettoriale X. Una ipersuperficie può essere definita da una funzione $f(x) = cost$ non degenere (attenzione ai teoremi di analisi 3 sulle funzioni inverse) Essa definisce una ipersuperficie. Va da se che il campo vettoriale $\eta^a = g^{ab} \nabla_{b} f$ è ortogonale alla varietà. Viceversa se ho un campo vettoriale posso costruire la 1-forma $g_{ab} X^{b}$, questa localmente (in un intorno semplicemente connesso) può essere integrata per dare luogo localmente a una superficie ortogonale a X.
+
+\item p.72 Calcolare le derivate di Lie del campo di covettori (fatto) e della metrica (da fare)
+
+\item Read linerized theory
+
+\item p.102 Show that the definition of external derivative is indipendet on the chart. Show that pullback and extrnal derivative commute. Read about Poincarè lemma.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Belliardo Federico}
+\title{Notes on Ma - Critical Phenomena}
+\begin{document}
+\maketitle
+\section{Introduction and basic concepts}
+\begin{itemize}
+\item TODO Vedersi la dualità di Krames-Wannier.
+\item (1.5 p.17) Il potenziale sentito da un neutro è del tipo $V(x) = A \vec{\mu} \cdot \vec{\sigma (x)}$. Cioè praticamente un'interazione di contatto con il magnete mesoscopico punto per punto. Lo scattering dei neutroni è come sempre incoerente neutrone per neutrone.
+\item (1.11) p.20 Si sottointende che dalla defizizione di $G(k)$ si sottrae la $\delta$ nell'origine, in ogni caso anche la parte non distribuzionale è una funzione divergente come $\frac{1}{k^2}$.
+\item (1.13) Dovrebbe essere una specie di relazione di flittuazione-dissipazione. Vedere dimostrazione sul quaderno. Attenzione che in queste definizioni di $\chi$ e $G(k)$ non è rimossa la parte singolare (che diverge quando le dimensioni del sistema divergono).
+\item La funzione di correlazione $G_i(x) = <\sigma_i(x) \sigma_i(0)>$ è definita per una certa componente dello spin.
+\item (1.19) Non chiarissima la sua definizione di staggered magnetization.
+\item (2.7 p.51) Le $\sigma_c$ sono variabili discrete non continue e come si vede nel caso di Hamiltoniane quantistiche i $k$ su cui bisogna sommare sono quelli interni alla prima zona di Brillouin che sono tanti quanti le celle del reticolo. Vedi esercizi di Fazio sul passare in trasformata di Fourier gli operatori di creazione e distruzione.
+\item (2.29 p.68) Si ottiene questa formula semplicemnete sostituendo la definizione di serie di Fourier. Essendo su un dominio finito scriviamo ogni funzione come somma di armoniche con condizioni periodiche al bordo che hanno i numeri d'onda $k = \frac{2 \pi}{L^d} n$ se la funzione che vogliamo scrivere non è continua ma è definita solamente su un reticolo di punti le frequenze da prendere sono quelle interne alla prima zona di Brillouin cioè con $n < N$ dove $N$ è il numero totale di siti. Fatto ciò la formula segue banalmente. Mettersi su un dominio finito permette di considerare la serie di Fourier invece della trasformata.
+\item Nota che in questa formula (2.29 p.68) il coefficiente $\Lambda$ è $\sim \frac{\pi}{a}$ dove $a$ è il passo del reticolo. Per trovare le nuove Hamiltoniane rinormalizzate non basta dimenticarsi si sommare sugli alti impulsi ma è necessario integrare via queste variabili dalla distribuzione di probabilità. Una trasformazione $K(s)$ è tale da integrare via tutti i $k > \frac{\Lambda}{s}$, dove $\Lambda$ è il massimo impulso presente nell'ensamble. Una successiva trasformazione $K(t)$ ammazza tutti gli impulsi $k > \frac{\Lambda}{st}$.
+\end{itemize}
+\section{The Gaussian approximation}
+\begin{itemize}
+\item Come fa giustamente notare il Ma conviene considerare fin dall'inizio la variabile di spin come continua, tanto basta una trasformazione che il successivo spin di blocco può assumere tanti più valori. 
+\item (3.16 p. 81) L'Hamiltoniana di Gizburn-Landau valutata nel valore più probabile (e medio) per il campo di spin è semplicemente l'energia libera. Infatti sarebbe $Z = \int e^{- \beta H[\sigma(x)]} d \sigma (x)$ tuttavia trascurando l'integrale funzionale su tutte le possibili configurazioni dei campi (ricordandosi il cut-off sul momento) si ottiene $Z = e^{- \beta H[\bar{\sigma}(x)]}$, cioè $H[\bar{\sigma}(x)]$ è l'energia libera (ricordarsi che essendo un sistema magnetico l'energia libera non sarebbe propriamente quella di Helmholtz ma dipende da (T, V, h), è la trasformata di Legendre di Helmholtz rispetto alla magnetizzazione.
+Data questa energia libera e confrontata con quella sopra la temperatura critica si vede che vi è una discontinuità nel calore specifico, cioè nella derivata seconda dell'energia libera. Si capisce perché quando vi è disordine non si può assorbire energia e trasformarla in magnetizzazione mentre quando il sistema è ordinato si!
+Bisognerebbe stare attenti alla definizione di calore specifico che si appoggia all'energia di Helmholtz, ma quella che abbiamo non è Helmholtz, non ce ne preoccuperemo.
+\item La divergenza di (3.35) esiste nell'origine (a $k=0$) perché abbiamo approssimato la serie degli impulsi con un integrale e questo è possibile farlo solamente nel limite in cui ho molti punti poco spaziati nella somma, e cioè nel limite in cui diventano continui e le dimensioni del campione tendono a $\infty$ (limite termodinamico). E' solo nel caso in cui diverge $L$ che ho effettivamente transizione di fase.
+\item (3.17 p.78) Non so da dove viene questa formula.
+\item (3.30) La trasformata di Fourier della funzione di correlazione $G(k)$ avrebbe anche una componente distribuzionale $\delta(k)$ (divergenza infrarossa dovuta all'infinitezza dello spazio) tuttavia la trascuriamo. Solo nelle definizione dell'ampiezza di transizione.
+\item (3.41) Non capisco la formula, come si ricava questa approssimazione?
+\item Con la trattazione di campo medio il calore specifico non diverge ma ha una discontinuità. Introducendo le fluttuazioni gaussiane si vede la divergenza del calore specifico.
+\item Vedersi il paragrafo 3.4 (Gaussian approximation for $T<T_c$)
+\item (3.52 pagina 90) L'integrale è quello di Yukawa.
+\item (3.60) Nelle equazioni per ricavare i calori specifici abbiamo trascurato le parti non singolari. Ci concentriamo sulla presenza della divergenza che l'approssimazione gaussiana mostra. Sapiamo tuttavia dalla teoria di campo medio che  vi è una discontinuità. Considerare le fluttuazioni fa si che anche nella fase disordinata si abbia un certo calore specifico (credo).
+\item 3.7 Fluctuation and dimentions: E' pur vero che il calore specifico non diverge, tuttavia diverge la costante $A$ davanti se faccio l'integrale con il cut-off a infinito.
+\item Finire di leggere il capitolo 3.
+
+\section{The scaling hypotesys}
+\item pag.110 cap.5 Perché l'energia libera non trasforma sotto cambio di scala? Le dimensioni di scaling di una quantità sono l'esponente con cui compare la lunghezza nella sua unità di misura . Dunque per esempio $\frac{F}{kT}$ è adimensionale e quindi $\frac{F}{kTV}$ scala con $-d$.
+
+\section{The renormalization group}
+\item Nella formula (5.21) perché la funzione con cui si rimpiazza deve essere monotonamente crescente?
+\item Mostro esplicitamente che $<\sigma_x>_P = \lambda_s <\sigma_{x/s}>_{P'}$.
+\section{Fized points and exponents}
+\item Formula 6.7: è vera se $s$ e $S'$ sono uguali, altrimenti non  detto che il gruppo di rinormalizzazione linearizzato intorno ai due valori del parametro di scala abbiano gli stessi autovettori.
+\Item In realtà assumendo che tutte le trasformazioni $R_s$ siano scrivibili come prodotto di trasformazioni infinitesime, cioè: $R_s = M^s$, si può diagonalizzare la matrice $M$ e vedere che le trasformazioni di gruppo di rinormalizzazione condividono tutte gli stessi autovettori e gli autovalori devono essere delle potenze.
+\item p.146 Non capisco perché la somma degli spin è invariante per Kadanoff, mi sembra che debba comparire una una extra costante moltiplicativa b. Come si fa questa cosa?  
+\end{itemize}
+\end{document}

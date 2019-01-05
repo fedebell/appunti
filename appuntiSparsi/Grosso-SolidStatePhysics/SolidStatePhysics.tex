@@ -1,0 +1,56 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{braket}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Belliardo Federico}
+\title{Notes on Solid State Physics - Grosso}
+\begin{document}
+\maketitle
+\section{Electrons in one-dimensional periodic potentials}
+\begin{itemize}
+\item Come detto in classe è possibile costruire la generica matrice di trasferimento moltiplicando matrici di trasferimento di rettangolini.
+\item (formula 36) \textbf{Non ho capito} cosa sono le funzioni \textit{Bloch sum} e se sono autostati dell'energia (mi verrebbe da dire di no). 
+\item (pag. 19) Una generica matrice tridiagonale ha elementi fuori matrice $b_0\bra{0} \ket{1} + b_0^{*} \bra{1} \ket{0}$, dunque nel ket $\ket{0}$ si può fare rientrare la fase indesiderata.
+\item L'equazione secolare per l'energia $E(k)$ che è ricordiamo periodica in $k$ è: $det [\frac{h^2(k+h_m)^2}{2 m} - E] \delta_{m, n} + V(h_m - h_n) = 0$. Essa a fissato $k$ restituisce lo splitting degli autovalori. Se la perturbazione è piccola essa è costituita praticamente da blocchi due per due con autovalori degeneri dovuti alla separazione delle parabole.
+\item Partendo da un autostato in una certa banda e quasiimpulso applicando un campo elettrico si ottiene: $\psi(x+a, t; F) = e^{i k(t) a} \psi(x, t;F)$, essa si può sviluppare in termini delle onde $\psi_{n, k} = e^{i k x} u_{n, k} (x)$ a fisso $k$ di tutte le banda. (Considerando tutti i $k$ ho un insieme completo). 
+\item Se il campo elettrico (perturbazione è piccola in genere le transizioni interbanda sono trascurabili (\textbf{quale è la condizione esatta?}) e quello che succede è che l'elettrone rimane sostanzialmente nella banda originale e ne esplora tutti gli impulsi: si generano oscillazioni di Bloch.
+\item Si può pensare che in una banda piena vi sia un quasimpulso totale $k_{tot} = \sum_{i=1}^{N} k_i = 0$, togliendo un elettrone si lascia un quasimpulso $k_{tot} = \sum_{i=1}^{N} k_i - k_0 = - k_0$, dove $k_0$ è l'impulso dell'elettrone tolto. Quindi $k_{b} = -k_{e}$ quindi vale il cambio di segno anche per la derivata.
+Similmente aggiungere una buca significa togliere energia dunque le buche hanno $E_{b} = -E_{e}$, quindi anche le masse che sono derivate seconde dell'energia sono opposte in segno.
+\end{itemize}
+\section{Geometrical description of crystals: direct and
+reciprocal lattices}
+\begin{itemize}
+\item Sono da sapere solo questi reticoli: Gas rari solidi, metalli alcalini, cloruro di sodio, diamante, zincoblenda. Grafite bi- e tri-dimensionale. Reticolo esagonale compatto. Quindi per esempio non è necessario sapere la wurzite.
+\item La cella di Wigner-Seitz per un certo punto del reticolo cristallino semplice è definita come l'insieme dei punti che sono più vicini al punto scelto che a qualunque altro del reticolo. Può essere ottenuta praticamente bisecando con dei piani i vettori che collegano il punto base scelto con ogni altro e prendendo la più piccola regione che contiene il punto scelto. Se ho un cristallo composto ho una cella per ogni atomo, che da solo genera un reticolo di Bravais on i suoi simili.
+\item Quale è di preciso la differenza tra $[m_1, m_2, m_3]$ e ${m_1, m_2, m_3}$? Credo semplicemente che via siano più terne irriducibili (basta pensare alla simmetrica rispetto all'origine) che danno origine alla stesa famiglia di piani (magari con indici) diversi. Con le parentesi graffe quoziento rispetto a tutte queste simmetrie. \textbf{Non ho capito.}
+\item Leggersi convenzioni sulla direzione cristallografica.
+\item \textbf{Da rivedere!} E' vero che $\psi (k+g_m, r) = \psi(k, r)$. Si è vero veder spiegazione sull'Ashcroft. Posso sempre confinare il quasimpulso alla zona di Brillouin anche per quanto riguarda le funzioni d'onda. Date le espressioni esplicite per la funzione donta in termini dei coefficienti $c$ questa relazione può essere verificata direttamente per sostituzione.
+\item La dimostrazione del teorema di Bloch in 3d come è fatta sul libro di Grosso non si capisce, sono meglio le spiegazioni dell'Ashcroft-Mermin. In ogni caso $\psi(\vec{k}, \vec{r}) = e^{i \vec{k} \vec{r}} u_n (\vec{k}, \vec{r})$, dove $u_n$ è una funzione che ha la periodicità delle celle primitive del cristallo (anche se non sono Wigner-Seitz). 
+\item \textbf{Dimostrazione del teorema di Bloch}: l'operatore di traslazione $T$ commuta con l'Hamiltoniana $H$ quindi si possono diagonalizzare insieme. In particolare: $T_{\vec{R}} \psi_(\vec{x}) = \psi_(\vec{x} + \vec{R}) = e^{i f(\vec{R})} \psi_(\vec{x})$. 
+Questo perché l'operatore $T_{\vec{R}}$ è unitario quindi i suoi autovalori sono delle fasi. La funzione soddisfa alle proprietà $f(\vec{R_1} + \vec{R_2}) = f(\vec{R_1}) + f(\vec{R_2})$ e $f(0) = 0$, dunque (a meno di funzioni assurde) è lineare: $f( \vec{R}) = \vec{k} \cdot \vec{R}$. 
+Questa periodicità è sufficiente a dimostrare che $\psi_(\vec{x}) = e^{i \vec{k} \cdot \vec{x}} u(\vec{x})$ con $u$ funzione periodica. 
+\textbf{Rimane da dimostrare}: $\psi_{n, \vec{k}+\vec{K}} = \psi_{n, \vec{k}}$ e che conseguentemente $E_{n, \vec{k} + \vec{K}} = E_{n, \vec{k}}$.
+\item (pag. 67) \textbf{Da dimostare}: relazioni di somma (45a e 45b) per le onde piane con vettore d'onda contenuto nella prima zona di Brillouin. 
+Breve dimostrazione del fatto che $\sum^{B.Z.} e^{i \vec{k} \vec{t_n}} = 0$ per $t_n \neq 0$: scrivo la somma come il prodotto dei tre termini $(\sum_{m_1 = 0}^{N_1} e^{i \frac{m_1}{N_1} \vec{g_1} \cdot \vec{t_n}}) \cdot (...) \cdot (...)$. 
+Il generico elemento della somma si scrive $ e^{i \frac{m_1}{N_1} n_1 \vec{g_1} \cdot \vec{t_1}}$ dove sappiamo che $t_n = \sum n_i t_i$ (con $n_i \neq 0$ dunque il generico elemento della somma è la radice dell'unità, elevare a $n_i$ shifta solamente le radici di posizione e sappiamo che queste si sommano a 0. 
+Similmente si dimostra la relazione duale, dove stiamo attenti che nel libro c'è un'errore e dovrebbe essere ovviamente $K \neq 0$.
+\item (pag.69) Cos'è il Baldereschi point? In un reticolo cubico dove gli atomi si trovano solamente in un solo orbitale s abbiamo che il punto $\vec{k_B} = \frac{\pi}{2a} (1,1,1)$ è sufficiente per annullare tutti i contributi dalla prima, seconda e e terza shell di una funzione degli impulsi sufficientemente simmetrica. Quindi $<F>_{\vec{k}} \sim F(\vec{k_B}$. Questa è la sua utilità.
+\item (51, pag 70) Il cambio di variabile eseguito diventa singolare se siamo su un punto critico, ma l'espressione precedente continua a valere.
+\item (pag.70) Dall'espressione $D(E) = 2 \int_{B.Z.} \frac{V}{(2 \pi)^3} \delta(E(\vec{k}-E) d^3 k$, riparametrizando lo spazio con lo scalare $E(\vec{k}, \lambda_1 e \lambda_2$, 
+dove gli ultimi due parametri sono le coordinate sulla superficie a energia costante si ottiene dopo un cambio di variabili l'espressione desiderata. Infatti $d^3k = \frac{dE dS}{|\nabla_{\vec{k}} E_{\vec{k}}|}$, dunque cambiando variabili abbiamo.
+ $D(E_0) = 2  \int_{B.Z.} \frac{V}{(2 \pi)^3} \delta(E-E_0) \frac{dE dS}{|\nabla_{\vec{k}} E_{\vec{k}}|} = \int_{E(\vec{k})=E_0} \frac{V}{(2 \pi)^3} \frac{dS}{|\nabla_{\vec{k}} E_{\vec{k}}|}$ 
+\end{itemize}
+\section{Scattering of particles by crystals}
+\begin{itemize}
+\item 
+\end{itemize}
+
+\end{document}

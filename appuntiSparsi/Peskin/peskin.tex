@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{braket}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newcommand{\rem}[1]{[\emph{#1}]}
+
+\author{Belliardo Federico}
+\title{Cose da rivedere e annotazioni del Peskin}
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\item p.14 Calcolo asintotico del propagatore per l'equazione d'onda relativistica che ne mostra la violazione di causalità, non so come giustificarlo. FATTO
+
+\item p.25 Nel calcolo della derivata temporale del campo $\pi(x)$ viene utilizzata l'integrazione per parti di un campo quantistico. Non sono così sicuro che si possano integrare per parti gli operatori in questo modo. Eseguire questo secondo calcolo.
+
+\item p.27 Integrale complesso finale, non so come farlo.
+
+\item p.28 Viene affermato che la condizione $[\phi(x), \phi(y)] = 0$ campi definiti su punti dello spazio tempo space-like è una condizione sufficiente perchè sia preservata la causalità della teoria. Si cita che questo implica che anche per l'impulso canonico valga una simile relazione:$[\pi(x), \pi(y)] = 0$. In effetti si può scrivere $[\phi(\vec{x}, t +dt)-\phi(\vec{x},t), \phi(\vec{y}, t' +dt')-\phi(\vec{y},t')] = 0$. Commutatori come $[\phi(\vec{x}, t +dt), \phi(\vec{y}, t')] $ sono nulli perché l'intervallo tra $(\vec{x}, t)$ $(\vec{y}, t')$ è space-like e la condizione è aperta, quindi vale anche se si \emph{shifta} di poco la coordinata temporale. Anche assumendo che il commutatore dei campi sia null per continuità sul cono di luce (da verificare) questo ragionamento non permette di concludere che il commutatore degli impulsi canonici è nullo sul cono di luce. Cosa che è comunque possibile verificare eseguendo esplicitamente il calcolo con gli operatori di creazione e di distruzione.
+
+\item p.29 Perché è necessario che la trasformazione sia continua? Non va bene una trasformazione di Lorentz che fa parità spaziale e temporale? E' solo un "trucco" per fare un calcolo matematico, perché deve essere continua?
+
+\item p.30 Verifica che $D_R(x-y)$ è una funzione di Green dell'equazione di Klein-Gordon è da vedere: $(\partial^2+m^2) D_R(x-y) = -i \delta^4 (x-y)$. Vedi \url{www.physicspages.com/2016/03/17/greens-function-for-klein-gordon-equation/}
+
+\item p.30 (2.54) Credo che la formula sia $\frac{1}{p^2-m^2}$ e non $-\frac{1}{p^2-m^2}$
+
+\item p.45 (3.46) Eseguire un boost sulle coordinate su una funzione d'onda spinoriale scritta come onda piana da $e^{-i p \Lambda^{-1} x}$, si può pensare di scaricare questa trasformazione su $p$ scrivendo: $e^{-i \Lambda p x}$. La trasformazione $\Lambda_{\frac{1}{2}}$ agisce solo su $u(p)$.
+
+\item p.46 (3.50) Mostrare esplicitamente che questa formula è valida per tutti i possibili boost di Lorentz.
+
+\item p.69 Verificare esplicitamente che gli stati dati siano autostati dell'operatore di elicità. Per particelle massless dovrei dividere per il modulo del momento lineare, ma questo è nullo come faccio? Nella definizione d elicità compare solo la parte spaziale dell'impulso e si può applicare solo ad autostati dell'impulso spaziale poiché compare esplicitamente il modulo dell'autovalore dell'operatore impulso a denominatore. 
+
+\item p.71 Studiare le identità di Fierz!
+
+\item p.75 Controllare le relazioni soddisfatte dalla matrice $\gamma^{5}$ e le relazioni di Fierz.
+\item Non capisco perché la trasformazione chirale non lascia invariato anche il termine di massa.
+
+\item \textbf{Brief notes on parity operator in the Dirac theory}
+Per ipotesi $P a_{p} P = \eta_{a} a_{-p}$ e $P b_{p} P = \eta_{b} b_{-p}$. 
+L'ipotesi che due applicazioni della parità debba ridare lo stesso valore per qualunque osservabile (numero pari di operatori di creazione e distruzione di fermioni e antifermioni porta a $\eta_{a}^2 = \eta_{b}^2 = 1$. 
+Inoltre abbiamo che $P a_{p} a_{p} \dagger P = \eta_{a} \eta_{a}^{*} a_{-p} a_{-p} \dagger$, scambiando le variabili $p$ e $-p$ otteniamo $P a_{p} a_{p} \dagger P = \frac{1}{\eta_{a} \eta_{a}^{*}} a_{-p} a_{-p} \dagger$, dai quali $\eta_{a} \eta_{a}^{*} = 1$. 
+Sappiamo che vale $P \ket{0} = \ket{0}$, poiché una trasformazione unitaria sugli stati del sistema manda gli operatori di creazione in combinazioni lineari di operatori di creazione.
+ L'unico stato che viene annichilito sia dai nuovi che dai vecchi operatori è lo stesso stato di vuoto $\ket{0}$ che le trasformazoni unitarie conservano. 
+ Da essa: $P a_{p} \dagger b_{q} \dagger \ket{0} = P a_{p} \dagger b_{q} PP \dagger PP \ket{0} = \eta_{a}^{*} \eta_{b}^{*} a_{-p} \dagger  b_{-q} \dagger \ket{0}$. 
+Scegliendo $\eta_{a} = 1$ e $\eta_{b} = -1$ è consistente con tutti i vincoli imposti e le leggi di trasformazione dei bilineari non dipendono esplicitamente dal valore di $\eta_{a}$ si ottiene $P a_{p} \dagger b_{q} \dagger \ket{0} = -a_{-p} \dagger  b_{-q} \dagger \ket{0}$.
+
+\item p.69 Non ho capito il time reversal, chiedo su StackExchange cosa è $\sigma^2$ del peskin.
+
+In Peskin book (p. 68) while discussing the time reversal they widely use the simbol $\sigma^2$, for example they claim $\vec{\sigma} \sigma^2 = \sigma (-\vec{\sigma}^{*})$. I couldn't understand what the symbol $\sigma^2$ stands for. It doesn't seem to be $\sigma^2 = \sigma_{1}^{2} + \sigma_{2}^{2} + \sigma_{3}^{2} = 3I$. Anybody has a clue?
+
+\item Si tratta della seconda matrice di Pauli. Essere più precisi su aggiunto di operatore antilineare di time-reversal (si può definire comunque, vedi SE). 
+Non bisognerebbe trasformare gli operatori con $T^{-1} a T$? Per un operatore antilineare ha comunque senso definire l'aggiunto ed è vero che $T^{-1} = T \dagger$, quello che non si può fare è usare la notazione braket. 
+Per normali operatori unitari lineari la definizione è: $A \rightarrow U^{-1} A U$, se l'operatore non è lineare estendiamo comunque questa definizione e diciamo che ho operatori pari o dispari per time-reversal a seconda del segno: $A \rightarrow U^{-1} A U = \pm A$. Controllare le identità accettate senza dimostrazione nella definizione di time-reversal sugli spinori di Dirac.
+
+\item Riguardare la coniugazione di carica!
+
+
+\end{itemize}
+
+\end{document}
