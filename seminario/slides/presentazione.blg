@@ -1,9 +1,0 @@
-[0] Config.pm:302> INFO - This is Biber 2.9
-[0] Config.pm:305> INFO - Logfile is 'presentazione.blg'
-[27] biber:313> INFO - === mar giu 11, 2019, 20:22:02
-[49] Biber.pm:371> INFO - Reading 'presentazione.bcf'
-[114] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[121] Utils.pm:169> WARN - The file 'presentazione.bcf' does not contain any citations!
-[128] bbl.pm:617> INFO - Writing 'presentazione.bbl' with encoding 'UTF-8'
-[128] bbl.pm:720> INFO - Output to presentazione.bbl
-[128] Biber.pm:110> INFO - WARNINGS: 1
