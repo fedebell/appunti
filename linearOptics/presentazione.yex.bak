@@ -1,0 +1,805 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{braket}
+\usepackage{verbatim}
+\usepackage{dsfont}
+\usepackage[autostyle]{csquotes}
+%\usepackage{pgfpages}
+%\setbeamertemplate{note page}[plain]
+%\setbeameroption{show notes on second screen=right}
+
+\usepackage[
+    backend=biber,
+    style=authoryear-icomp,
+    sortlocale=de_DE,
+    natbib=true,
+    url=false, 
+    doi=true,
+    eprint=false
+]{biblatex}
+\addbibresource{biblio.bib}
+
+
+\mode<presentation> {
+
+\usetheme{Warsaw}
+
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Incompatibility in quantum metrology]{Incompatibility in quantum metrology} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author[Federico Belliardo]
+{
+Federico Belliardo\\
+\vspace{10pt}
+} 
+
+\institute[SNS] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Scuola Normale Superiore, Pisa, Italy\\ % Your institution for the title page
+\medskip
+}
+\date{May 15th, 2019} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Summary}
+\begin{center}
+\begin{itemize}
+%Introduzione alla presentazione
+\item Introduction to quantum metrology and quantum estimation theory.
+\vspace{10pt}
+\item Incompatibility at the \textbf{measurement} level.
+\vspace{10pt}
+\item Incompatibility at the \textbf{probe} level.
+\end{itemize}
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}{Quantum metrology}
+\begin{center}
+We are interested in characterizing $\mathcal{E}_{\theta}$.
+The generic metrological process consists of a probe $\rho$ undergoing $\mathcal{E}_{\theta}$ which results in the codification of the parameters $\theta$ in $\rho_{\theta}$. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{channel.png}
+\end{figure}
+
+In the following $\theta$ will refer to multiple parameters $\theta_1, \theta_2, ..., \theta_d$.
+\end{center}
+\end{frame}
+
+%--------------------------------------
+
+\begin{frame}
+\begin{center}
+
+A generic measurement (POVM) is applied on $\rho_{\theta}$ and from the data extracted an estimator $\hat{\theta}$ is built. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.50]{parameterEstimation.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+%--------------------------------------
+
+\begin{comment}
+\begin{frame}
+\begin{center}
+There is variety of possible way to change the state $\rho_{\theta}$ for a given interaction $\mathcal{E}_{\theta}$:
+
+\begin{itemize}
+\item Changing $\rho$, possibly employing \textbf{entanglement}.
+\item Sequential application of $\mathcal{E}_{\theta}$.
+\item Using ancilla (which doesn't undergo the interaction).
+\item Employing quantum control.
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.40]{control.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+\end{comment}
+
+%--------------------------------------
+
+\begin{frame}
+\begin{center}
+
+The optimization among possible POVMs is the domain of parameter estimation.
+\begin{block}{Quantum Fisher Information matrix}
+The \textbf{QFI} $F \left( \rho \right)$ quantifies the amount of information codified in $\rho_{\theta}$ about the parameters $\theta$:
+\begin{equation*}
+\text{Cov} \left( \hat{\theta} \right) \ge F^{-1} \left( \rho \right)
+\end{equation*}
+\end{block}
+This inequality cannot be saturated in general.\\
+We construct a scalar quantity out of the matrix $F^{-1}$ by contracting with a positive weight matrix $G \ge 0$.
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Measurements incompatibility}
+\begin{center}
+We start from incompatibility at the \textbf{measurements} level.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+If all the parameters but $\theta_i$ are known the POVM which maximize the information extraction about $\theta_i$ has effects given by projectors on eigenvectors of $L_i$:
+\begin{equation*}
+\frac{\partial \rho_{\theta}}{\partial \theta_i} = \frac{1}{2} \left( \rho_{\theta} L_i + L_i \rho_{\theta} \right)
+\end{equation*}
+Typically $L_i$ don't commute and a joint optimal measurement doesn't exist:
+\begin{equation*}
+\left[ L_i, L_j \right] \neq 0
+\end{equation*}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+We will consider entangled POVM and a unitary encoding, unless specified.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.5]{jointSeparable.png}
+\end{figure}
+
+And we consider the asymptotic case of $N \rightarrow +\infty$.
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+\begin{block}{Figure of merit for compatibility at the measurement level}
+\begin{equation*}
+r = \frac{1}{d} \inf_{POVM} \sup_{G} \frac{ \text{Tr} \left[ G \cdot \text{Cov} \left( \theta \right) \right]}{\text{Tr} \left[ G  \cdot F^{-1} \left( \rho \right) \right]}
+\end{equation*}
+\end{block}
+The QFI bound cannot be reached for a generic $G$. 
+\begin{itemize}
+\item $r$ is a property of the statistical manifold, it is reparametrization invariant.
+\item Has a meaningful limit: $r \ge \frac{1}{d}$, $r = \frac{1}{d} \iff$ there is a \textbf{single} optimal measurement, reaching the QFI bound $\forall G$.
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+This figure of merit measures the lack of fitting a classical metric $\text{Cov} \left( \theta \right)$ on the quantum metric $F^{-1} \left( \rho \right)$ at a point of the statistical manifold $\lbrace
+\rho_{\theta} \rbrace$.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.5]{metric.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+\begin{center}
+The precision bound $\mathbf{d} \text{Tr} \left[ G  \cdot F^{-1} \left( \rho \right) \right]$ can always be reached by separable optimal measurements.
+
+%TODO Immagine
+
+\end{center}
+\end{frame}
+\end{comment}
+
+\begin{frame}
+\begin{center}
+\begin{equation*}
+U = e^{i \theta_1 \sigma_y+ i \theta_2 \sigma_z}
+\end{equation*}
+where also an arbitrary noise is acting. Then through Quantum Local Asymptotic Normality (QLAN) we get:
+%Consider the model $\lbrace \rho_{\theta} \rbrace$ where the state is actually unknown and all the parameters characterizing $\rho$ other than $\theta$ are regarded as nuisance, basically we don't assume the existance of a statistical manifold. Through Quantum Local Asymptotic Normality (QLAN)  we get:
+%and on the Holevo bound (reachable bound on $\text{Tr} \left[ G \cdot \text{Cov} \left( \phi \right) \right]$) we get:
+\begin{equation*}
+r \le \frac{1}{2} + \frac{1}{2} \sup_{G} \frac{\text{Tr} \text{Abs} \left( \sqrt{G} \cdot F^{-1} A F^{-1} \cdot \sqrt{G} \right) }{\text{Tr} \left( G \cdot F^{-1} \right) } \le 1
+\end{equation*}
+with:
+\begin{equation*}
+A_{ij} = \frac{1}{2 i} \text{Tr} \left( \rho \left[ L_i, L_j \right] \right) \quad F_{ij} = \frac{1}{2}  \text{Tr} \left( \rho \lbrace L_i, L_j \rbrace \right)
+\end{equation*}
+If the noise strength is considered as a nuisance parameter (unknown but of no interest for the estimation) then the equality holds.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\begin{equation*}
+U = e^{i \theta_1 H_1 + i \theta_2 H_2}
+\end{equation*}
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{orthogonal.png}
+\end{figure}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+Simplest examples:
+\begin{itemize}
+\item $U = e^{i \theta_1 \sigma_y+ i \theta_2 \sigma_z}$, with $\rho = | + \rangle \! \langle + |$ has $r = 1$.
+\item $U = e^{i \theta_1 H_1 + i \theta_2 H_2}$, with $\rho$ optimal has $r = 1$.
+\item Two phase estimation on two qubits: $U \otimes U$, with optimal state has $r = \frac{1}{2}$.
+\item Ancilla assisted estimation $U = e^{i \sum_{i = 1}^{3} \theta_i \sigma_i}$ with maximally entangled state $\rightarrow r = \frac{1}{3}$.
+\end{itemize}
+%The optimal states $\ket{+}, \ket{-}$ have maximum incompatibility $r = 1$, all other states (containing less information) are more compatible.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{ancillae.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+\begin{block}{Question}
+Does adding noise enhance the compatibility?
+\end{block}
+\vspace{30pt}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{AddNoise.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Classical noises on a qubit, given the model $U = e^{i \theta_1 \sigma_y+ i \theta_2 \sigma_z}$.
+\begin{itemize}
+\item Depolarizing noise: $r = \frac{1}{2}+\frac{1}{2} \lambda$, with $F^{\lambda} = \lambda^2 F$.
+%\item Dephasing noise: $\Lambda \left( \rho \right) = \left( \frac{1}{2} + \lambda \right) \rho + 	\left( \frac{1}{2} - \lambda \right) \sigma_z \rho \sigma_z$ acting after the interaction, $r = 1$. Doesn't improve compatibility.
+\item Amplitude damping channel: $r = 1-\frac{p}{2}$. $p$ is the decaying probability.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{noisy.png}
+        \centering
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{compDepol.png}
+        \centering
+    \end{minipage}
+    \caption{QFI and compatibility for depolarizing noise}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+In the theory of Quantum Local Asymptotic Normality the ensemble of states $\rho_{\theta}^{\otimes N}$ is asymptotically ($N \rightarrow +\infty$) equivalent to a displaced thermal state:
+
+\begin{equation*}
+\rho_{\theta}^{\otimes N} \rightarrow D \left( \alpha \right) \frac{e^{- \beta H}}{Z} D^{\dagger} \left( \alpha \right)
+\end{equation*}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+The asymptotic model (QLAN) is a displaced thermal state, as the depolarizing noise act, the temperature of the state increases. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{temp1.png}
+\end{figure}
+
+%Formally the limit $T \rightarrow +\infty$ is equivalent to the limit $\hbar \rightarrow 0$. We thus explicit show how we recover the classical limit, when the information gets erased.
+Formally we approach a classical limit when the information gets erased.
+
+%TODO Notice that the dephasing noise acting on the probe after the interaction conseves a certain amount of the quantum information. It is not a classical limit in the strict sense???
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+\textbf{Observations}:
+\begin{itemize}
+\item There is a \textbf{trade-off} between the information content of a state, characterized by $F$ and the incompatibility $r$: $\left( r - \frac{1}{2} \right) F^{-1} = \text{const.}$
+\item If only separate measurement are allowed then \textbf{no advantage} in compatibility is obtained in the noisy case. Entangled measurements are necessary.
+\item It
+ doesn't mean that it is actually useful to add noise, information gets lost. We aim to study the dynamics of incompatibility.
+\item By adding depolarizing noise full compatibility is only obtained in the limit of zero information $\text{Tr} \left[ G \cdot F^{-1} \right] \rightarrow +\infty$.
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+\begin{center}
+If one is confined to use separable measurements, the optimal strategy is measuring $\sigma_z, \sigma_y$, the two incompatible Pauli matrix. Or their approximate joint measurement.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{separable.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+\end{comment}
+
+\begin{frame}
+\begin{center}
+Does a map $\Lambda$ exists that is capable of enforcing compatibility while sacrificing only a finite amount of information?\\
+For the model $U = e^{i \theta_1 \sigma_y + i \theta_2 \sigma_z}$ around $\theta_1 = \theta_2 = 0$, with $\rho = | + \rangle \! \langle + |$ , such map is:
+\begin{equation*}
+\Lambda \left( \rho \right) = \frac{1}{2} \rho + \frac{1}{4} \sigma_y \rho \sigma_y + \frac{1}{4} \sigma_z \rho \sigma_z
+\end{equation*}
+%Its figures of merit are: $r = 0$, $F \rightarrow \frac{1}{4} F$.\\
+%There are many maps that accomplish this result, is this one optimal?
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.40]{projection.png}
+\end{figure}
+
+This channel has a geometric interpretation, it project the state $\rho$ and the logarithmic derivatives $L_i$ on the same plane.\\
+Enforced compatibility can be interpreted through QLAN theory.
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+The map $\Lambda$ have the effect to codify $\theta_1$, $\theta_2$ into compatible variables of the asymptotic model.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{temp2.png}
+\end{figure}
+
+Like the the temperature $T'$ and one of the quadrature of $\alpha'$.\\
+
+\end{center}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+\begin{center}
+Not necessarily an increase of the compatibility is associated to $\hbar \rightarrow 0$ in the asymptotic model.\\
+It may be due to a different encoding of the parameters.
+
+%TODO : Rimane da capire il dephasing noise. E' un rumore che distrugge l'informazione ma solo una parte e non aumenta la compatibilità. Perché 
+
+\end{center}
+\end{frame}
+\end{comment}
+
+
+\begin{frame}
+\begin{center}
+Consider the estimation of two phases but depolarizing noise is continuously acting. We can discretize this in a sequential application of $k$ interaction channels followed by noise. $T$ is the interaction time:
+\begin{equation*}
+k \propto T
+\end{equation*}
+Given $N$ repetition of the measurement, we confront strategies with equal total amount of interaction time: $k N = \text{const.}$
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.75]{sequential.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+As time pass the QFI of the state grows, but also the noise affect the state increasingly:
+\begin{equation*}
+\frac{F^{-1}}{N} \propto \frac{1}{4 k \lambda^{2 k}}
+\end{equation*} 
+There is an optimal value $k^{\star} = -\frac{1}{\log \lambda}$ which maximize QFI.
+\begin{equation*}
+\text{Tr} \left[G \cdot \text{Cov} \left( \theta \right) \right] \le 2 r \text{Tr} \left[ G \cdot F^{-1} \right] \propto \left( 1 + \lambda^k \right) \frac{1}{4 k \lambda^{2 k}}
+\end{equation*}
+for the optimal POVM.
+The above expression has a minimum $k^{\star \star}$ slightly away from $k^{\star \star} \ge k^{\star}$.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.5]{time.png}
+\end{figure}
+
+Because of the compatibility enhancing effect of noise, it is actually convenient once the probe has reached the maximum information (QFI) to continue the interaction. During this extra time information is destroyed, but it will be convenient for the retrieval.
+
+\end{center}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+\begin{center}
+%TODO The equlitty sign should be valid too when we have a d-dimentional system and we compute it's value of r. The inequility when there is nissance paramters though doesn't hold.
+We saw $r -\frac{1}{2} \propto \lambda$, $F \propto \lambda^2$. This lead to a trade-off relation:
+\begin{equation*}
+\left( r -\frac{1}{2} \right)^2 F^{-1} = \text{const.}
+\end{equation*}
+We take a glimps on high dimentionality. Consider $\rho$ a $D$-dimentional state and $\Lambda \left( \rho \right) = \lambda \rho + \left( 1 - \lambda \right) \frac{\mathds{1}}{d}$, then:
+\begin{gather*}
+F \propto \frac{\lambda^2 D}{2+ \lambda \left( D-2 \right)} \propto \lambda \quad \text{for} \quad D \gg 2, \; \lambda \gg \frac{1}{d} \quad \text{and}\\
+ r - \frac{1}{d} \propto \lambda
+\end{gather*}
+\begin{equation*}
+\left( r -\frac{1}{d} \right) F^{-1} = \text{const.}
+\end{equation*}
+\end{center}
+\end{frame}
+\end{comment}
+
+
+%--------------------------------------
+
+\begin{frame}{Probe incompatibility}
+\begin{center}
+
+From now on we concentrate on incompatibility of \textbf{probe}.
+
+\end{center}
+\end{frame}
+
+%--------------------------------------
+
+\begin{frame}
+\begin{center}
+\begin{itemize}
+\item Hamiltonian learning: $U = e^{i \sum_{i = 1}^{d} \theta_i H_i}$.\\
+\item Consider optimal estimation of a \textbf{single} parameter $\theta_i$, assuming the others are known. Then $F_{ii}$ is maximized by a pure state $\ket{\psi}_i$ having maximum variance for the generator $H_i$:
+\begin{equation*}
+F_{ii} = 4 \, \langle \psi | \left( H_i \right) ^ 2 | \psi \rangle
+\end{equation*}
+\item Different parameters will have different optimal states.
+\end{itemize}
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+
+Previously this problem has been formalized through Ragy's conditions, stating that full compatibility (of the probe) is obtained iff $\exists \; \rho$ such that:
+
+\begin{block}{Ragy's conditions}
+\begin{itemize}
+\item $F_{ij} = 0$ (statistical orthogonality)\\
+\item $F_{ii} =  4 \, \langle \psi_i | \left( H_i \right) ^ 2 | \psi_i \rangle$
+\end{itemize}
+\end{block}
+\begin{itemize}
+\item This are very restrictive and are not reparametrization invariant. %One can enforce it by requiring them to hold for some parametrization.
+\item %Generally there is correlation: $\left( F^{-1} \right)_{ii} \ge \left( F_{ii} \right)^{-1}$ and no state has maximum variance $\forall \; H_i$.
+$\left( F^{-1} \right)_{ii} \ge \left( F_{ii} \right)^{-1}$
+\end{itemize}
+
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+\begin{itemize}
+\item Still each parameter $\theta_i$ has an optimal state $\rho_i$.
+\item Given an objective function $G$ we asks what is the optimal state $\rho_{G}$. It emerges through a \textbf{competition} among different states $\rho_i$. $\rho_G$ minimizes:
+\begin{equation*}
+C_S = \text{Tr} \left[ G \cdot F^{-1} \left( \rho \right) \right]
+\end{equation*}
+\end{itemize}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.40]{competition.png}
+\end{figure}
+
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+
+\begin{block}{Questions}
+\begin{itemize}
+\item How can we quantify incompatibility (beyond Ragy's conditions)?
+\item Could it be that the optimal state $\rho_G$ is mixed?
+\end{itemize}
+\end{block}
+
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+
+\begin{block}{Figure of merit for incompatibility at the probe level}
+\begin{center}
+$u = \frac{1}{d} \inf_{\rho} \sup_{G} \frac{\text{Tr} \left[ G \cdot F^{-1} \left( \rho \right) \right]}{ \text{Tr} \left[ G \cdot F^{-1} \left( \rho_G \right) \right]}$
+\end{center}
+\end{block}
+%Explain the figure of merit, basically fixed a state $\rho$ we compute for every possible objective function $G$ the information content the state \rho_{\theta} would have. Then compare ot to the maximum information content the best state \rho_{G} could it. Given that $\rho_G was aspecifically choosen to adress estimation of $G$.
+%TODO add block
+
+\textbf{Pros}:
+\begin{itemize}
+\item It is a property of the statistical model $\lbrace U_{\theta} \rbrace$ (reparametrization invariant).
+\item Has a meaningful limit: $u = \frac{1}{d} \, \iff \, \exists \, \rho_0 \; | \; F \left( \rho_0 \right) \ge F \left( \rho \right) \forall \rho$.
+\end{itemize}
+\textbf{Cons}:
+\begin{itemize}
+\item Relation between $u$ and Ragy's conditions not clear. 
+%I can say that u=1/2 + a strong assumption implys Ragy's and I haven't find a proof of the corverse: so if ragy's conditions are true.
+\item Difficult optimization to compute.
+\end{itemize}
+
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.50]{ancillae.png}
+\end{figure}
+
+In the contex of ancilla assisted estimation the capability of a state to encode incompatible information is measured by its Quantum Interferometric Power (QFI):
+\begin{equation*}
+\sup_{G} \frac{\text{Tr} \left[ G \cdot F^{-1} \left( \rho \right) \right]}{d \text{Tr} \left[ G \cdot F^{-1} \left( \rho_G \right) \right]} \le \frac{1}{4 P_{A} \left( \rho_{\theta} \right)} \sup_{G} \frac{\text{Tr} \left( G \right)}{d \text{Tr} \left[ G \cdot F^{-1} \left( \rho_G \right) \right]}
+\end{equation*}
+The QFI has been shown to be a measure of \textbf{quantum discord}, which is thus a quantifier of the capability of the state to encode incompatible informations.
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+Simplest cases:
+\begin{itemize}
+\item Single qubit model $U = e^{i \theta_1 H_1 + \theta_2 H_2} \rightarrow u = \frac{1}{2}$
+\item Ancilla assisted estimation $U = e^{i \sum_{i = 1}^{3} \theta_i \sigma_i} \rightarrow u = \frac{1}{3}$. Maximally entangled states are optimal.
+\end{itemize}
+%Comment on this examples, comment the image
+
+%TODO add an image
+
+%Say that the three phase estimation in there indeed because in the case of two we find always an optimal state. While going to three phases the QFI becames singular by using only one qubit, then we use two (ancilla). When estimating three phases there with a qubit there is always an unsolvable competion between two states. The maximally entangled state are optimal and this optimality is quite robust for  noise acting on the probe state. Basically the competition is solved expading the Hilber space, we find an optimal state.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=.40]{orthogonal.png}
+\end{figure}
+
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\begin{itemize}
+\item \textbf{Nosy estimation}? For depolarizing channel, the above examples maintain $u = \frac{1}{d}$.\\
+\item Consider the model $\lbrace U^{\otimes n} \rbrace$ then $u = 1$.\\
+\item In the ancilla assisted scenario the optimality of Bell state is robust to noise on the probe.
+\end{itemize}
+\end{center}
+\end{frame}
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+
+Can an optimal state be mixed?
+In single parameter scenario pureness of the probe is associated with convexity of the QFI:
+\begin{equation*}
+F \left( \lambda \sigma + \left( 1 - \lambda \right) \tau \right) \le \lambda F \left( \sigma \right) + (1- \lambda) F \left( \tau \right)
+\end{equation*}
+Convexity also holds in the in multiparameter contex but we cannot conclude $\rho_G$ is pure because different $F$ might be non comparable:
+\begin{align*}
+F_{ij}(\tau) & \le F_{ij}(\sigma)\\
+F_{ij}(\tau) & \ge F_{ij}(\sigma)
+\end{align*}
+The set of hermitian positive matrix has no total order.
+\end{center}
+\end{frame}
+
+%-------------------------------------
+
+\begin{frame}
+\begin{center}
+Adding a dephasing noise on the ancilla means reducing the entanglement available, a discordant state may emerge as optimal:
+\begin{itemize}
+\item $\ket{\psi}_{Bell} = \frac{1}{\sqrt{2}} \left( \ket{\uparrow \uparrow}+\ket{\downarrow \downarrow} \right)$
+\item $\rho_d = \frac{1}{2} \left| + \rangle  \! \langle + \right| \otimes \left| 0 \rangle  \!  \langle 0 \right| + \frac{1}{2} \left| \uparrow  \rangle \! \langle \uparrow \right| \otimes \left| 1 \rangle \!  \langle 1 \right|$
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{bell2.png}
+        \centering
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{entdisccomparison3.png}
+        \centering
+    \end{minipage}
+\end{figure}
+
+%Notice how a dephasing noise absolutely doesn't act on the ancilla. This is to say that for this noisy estimation process there are two states that are better for the estimation on different compotent of the magnetic fields (phases). The following is not a proof, but can be turned into one: A pure and separable state $\ket{\psi} \otimes \ket{\psi}$ have singular QFI then on e shoul use entanglement or discord (without entanglement). We see now that the discords wins.
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+Observations:
+\begin{itemize}
+\item The ancilla act is a \textbf{label} (classical bit).
+\item There is a \textbf{threshold} at $\lambda = \frac{1}{\sqrt{3}}$ for optimality of entangled or discordant strategy.
+%\item A threshold happears also for depolarizing noise.
+\item Introduce the interaction time $T$: 
+\begin{equation*}
+U = e^{i \sum_{i = 1}^{3} \theta_i \sigma_i} =  e^{i T \sum_{i = 1}^{3} B_i \sigma_i}
+\end{equation*}
+The dephasing on the ancilla accumulates and can become substantial even if it is well isolated from the environment. A threshold on $T$ appears.
+\item The noisy ancilla can be quantum error corrected.
+\item Possibly of interest for NISQ technologies.
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+%TODO Aggiungere immagini e epsiegare meglio.
+Add dephasing both on the probe $\lambda_p$ and on the ancilla $\lambda$.
+\begin{itemize}
+\item for $\lambda \ge \frac{1}{\sqrt{2}} \rightarrow$ entanglement
+\item for $\frac{1}{\sqrt{3}} \le \lambda \le \frac{1}{\sqrt{2}}$ optimality depends on the probe noise $\lambda_p$.
+\item for $\lambda \le \frac{1}{\sqrt{3}} \rightarrow$ discordant
+\end{itemize}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{entdisccomparison4.png}
+\caption{Critical value of $\lambda_p$ (noise on the probe), when the ancilla noise is $\lambda = 0.644$.}
+\end{figure}
+Similarly for dephasing-depolarizing channels.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+The two optimal state for estimation of $\theta_1, \theta_2$ and $\theta_3$ respectively are $\ket{1}$ and $\ket{+}$, for which $C_S = \frac{1}{4}$.
+The discordant state $\rho_d = \frac{1}{2} \left| + \rangle  \! \langle + \right| \otimes \left| 0 \rangle  \!  \langle 0 \right| + \frac{1}{2} \left| \uparrow  \rangle \! \langle \uparrow \right| \otimes \left| 1 \rangle \!  \langle 1 \right|$ has:
+\begin{equation*}
+F \left( \rho_d \right) = \begin{pmatrix}
+2 & 0 & 0\\
+0 & 4 & 0\\ 
+0 & 0 & 2\\
+\end{pmatrix}
+\end{equation*}
+$\theta_1$ and $\theta_3$ are only estimated at half of the possible measurement precision thus $u = \frac{2}{3}$.
+
+\vspace{10pt}
+
+%Say something about Heisenberg scaling in the multiparameter contex, it is linked to the scaling of mine figure of merit with the number of entangled probes.
+
+The scaling of $u$ with $N$, the number of probe, is an indicator of the of the possibility for one state to reach Heisenberg scaling for all $G$.
+
+\end{center}
+\end{frame}
+
+\begin{frame}{}
+  \centering \Huge
+  \emph{Thanks you!}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+Future directions:
+\begin{itemize}
+\item Prove the upper bound on $r$ also for the $D$-dimentional case.
+\item For the displaced Gaussian noise in presence of thermal noise joint measurements are no use, what determines their utility?
+\item Further study dynamics of incompatibility, in particular what happens to the information released in the environment?
+\item Does the Riemanniann curvature of the statistical manifold $\lbrace \rho_\theta \rbrace$ has any significance?
+\end{itemize}
+\end{center}
+\end{frame}
+
+
+%--------------------------------------
+
+\end{document}

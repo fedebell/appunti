@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  3 MAY 2019 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.30)  11 JUN 2019 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**QuantumMetrology.tex
-(./QuantumMetrology.tex
+**presentazione.tex
+(./presentazione.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -964,13 +964,299 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
 (/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count154
+\calc@Bcount=\count155
+\calc@Adimen=\dimen190
+\calc@Bdimen=\dimen191
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count156
+\calc@Cskip=\skip59
+)
+\thesrwidth=\skip60
+\thesrheight=\skip61
+\srblobheight=\skip62
+\srblobdepth=\skip63
+\mnxsrwidth=\skip64
+\LMex=\skip65
+\LMpt=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks45
 \verbatim@line=\toks46
 \verbatim@in@stream=\read2
 )
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
+\csq@reset=\count157
+\csq@gtype=\count158
+\csq@glevel=\count159
+\csq@qlevel=\count160
+\csq@maxlvl=\count161
+\csq@tshold=\count162
+\csq@ltx@everypar=\toks47
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+\pgf@logicalpages=\count163
+\pgf@firstshipout=\count164
+\pgf@lastshipout=\count165
+\pgf@currentshipout=\count166
+\pgf@cpn=\count167
+\pgf@shipoutnextto=\count168
+\pgfphysicalheight=\dimen192
+\pgfphysicalwidth=\dimen193
+\pgfpages@shipoutbox=\box53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count169
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write5
+\integerpart=\count170
+\decimalpart=\count171
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count172
+\c@listtotal=\count173
+\c@listcount=\count174
+\c@liststart=\count175
+\c@liststop=\count176
+\c@citecount=\count177
+\c@citetotal=\count178
+\c@multicitecount=\count179
+\c@multicitetotal=\count180
+\c@instcount=\count181
+\c@maxnames=\count182
+\c@minnames=\count183
+\c@maxitems=\count184
+\c@minitems=\count185
+\c@citecounter=\count186
+\c@savedcitecounter=\count187
+\c@uniquelist=\count188
+\c@uniquename=\count189
+\c@refsection=\count190
+\c@refsegment=\count191
+\c@maxextratitle=\count192
+\c@maxextratitleyear=\count193
+\c@maxextradate=\count194
+\c@maxextraalpha=\count195
+\c@abbrvpenalty=\count196
+\c@highnamepenalty=\count197
+\c@lownamepenalty=\count198
+\c@maxparens=\count199
+\c@parenlevel=\count266
+\blx@tempcnta=\count267
+\blx@tempcntb=\count268
+\blx@tempcntc=\count269
+\blx@maxsection=\count270
+\blx@maxsegment@0=\count271
+\blx@notetype=\count272
+\blx@parenlevel@text=\count273
+\blx@parenlevel@foot=\count274
+\blx@sectionciteorder@0=\count275
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\biblabelsep=\skip69
+\bibitemsep=\skip70
+\bibnamesep=\skip71
+\bibinitsep=\skip72
+\bibparsep=\skip73
+\bibhang=\skip74
+\blx@bcfin=\read3
+\blx@bcfout=\write6
+\c@mincomprange=\count276
+\c@maxcomprange=\count277
+\c@mincompwidth=\count278
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear-icomp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count279
+\c@savedafterword=\count280
+\c@annotator=\count281
+\c@savedannotator=\count282
+\c@author=\count283
+\c@savedauthor=\count284
+\c@bookauthor=\count285
+\c@savedbookauthor=\count286
+\c@commentator=\count287
+\c@savedcommentator=\count288
+\c@editor=\count289
+\c@savededitor=\count290
+\c@editora=\count291
+\c@savededitora=\count292
+\c@editorb=\count293
+\c@savededitorb=\count294
+\c@editorc=\count295
+\c@savededitorc=\count296
+\c@foreword=\count297
+\c@savedforeword=\count298
+\c@holder=\count299
+\c@savedholder=\count300
+\c@introduction=\count301
+\c@savedintroduction=\count302
+\c@namea=\count303
+\c@savednamea=\count304
+\c@nameb=\count305
+\c@savednameb=\count306
+\c@namec=\count307
+\c@savednamec=\count308
+\c@translator=\count309
+\c@savedtranslator=\count310
+\c@shortauthor=\count311
+\c@savedshortauthor=\count312
+\c@shorteditor=\count313
+\c@savedshorteditor=\count314
+\c@labelname=\count315
+\c@savedlabelname=\count316
+\c@institution=\count317
+\c@savedinstitution=\count318
+\c@lista=\count319
+\c@savedlista=\count320
+\c@listb=\count321
+\c@savedlistb=\count322
+\c@listc=\count323
+\c@savedlistc=\count324
+\c@listd=\count325
+\c@savedlistd=\count326
+\c@liste=\count327
+\c@savedliste=\count328
+\c@listf=\count329
+\c@savedlistf=\count330
+\c@location=\count331
+\c@savedlocation=\count332
+\c@organization=\count333
+\c@savedorganization=\count334
+\c@origlocation=\count335
+\c@savedoriglocation=\count336
+\c@origpublisher=\count337
+\c@savedorigpublisher=\count338
+\c@publisher=\count339
+\c@savedpublisher=\count340
+\c@language=\count341
+\c@savedlanguage=\count342
+\c@origlanguage=\count343
+\c@savedoriglanguage=\count344
+\c@pageref=\count345
+\c@savedpageref=\count346
+\shorthandwidth=\skip75
+\shortjournalwidth=\skip76
+\shortserieswidth=\skip77
+\shorttitlewidth=\skip78
+\shortauthorwidth=\skip79
+\shorteditorwidth=\skip80
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count347
+\c@textcitetotal=\count348
+\c@textcitemaxnames=\count349
+\c@biburlnumpenalty=\count350
+\c@biburlucpenalty=\count351
+\c@biburllcpenalty=\count352
+\c@smartand=\count353
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear-icomp'...
+Package biblatex Info: ... file 'authoryear-icomp.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear-icomp.bbx
+File: authoryear-icomp.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/
+AB)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count354
+\c@bbx:relatedtotal=\count355
+)))
+Package biblatex Info: Trying to load citation style 'authoryear-icomp'...
+Package biblatex Info: ... file 'authoryear-icomp.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear-icomp.cbx
+File: authoryear-icomp.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty
@@ -979,49 +1265,60 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen190
-\lightrulewidth=\dimen191
-\cmidrulewidth=\dimen192
-\belowrulesep=\dimen193
-\belowbottomsep=\dimen194
-\aboverulesep=\dimen195
-\abovetopsep=\dimen196
-\cmidrulesep=\dimen197
-\cmidrulekern=\dimen198
-\defaultaddspace=\dimen199
-\@cmidla=\count154
-\@cmidlb=\count155
-\@aboverulesep=\dimen256
-\@belowrulesep=\dimen257
-\@thisruleclass=\count156
-\@lastruleclass=\count157
-\@thisrulewidth=\dimen258
+\heavyrulewidth=\dimen194
+\lightrulewidth=\dimen195
+\cmidrulewidth=\dimen196
+\belowrulesep=\dimen197
+\belowbottomsep=\dimen198
+\aboverulesep=\dimen199
+\abovetopsep=\dimen256
+\cmidrulesep=\dimen257
+\cmidrulekern=\dimen258
+\defaultaddspace=\dimen259
+\@cmidla=\count356
+\@cmidlb=\count357
+\@aboverulesep=\dimen260
+\@belowrulesep=\dimen261
+\@thisruleclass=\count358
+\@lastruleclass=\count359
+\@thisrulewidth=\dimen262
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 45.
+(hyperref)                removing `\\' on input line 64.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 45.
+(hyperref)                removing `\new@ifnextchar' on input line 64.
 
-(./QuantumMetrology.aux)
-\openout1 = `QuantumMetrology.aux'.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 73.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+)
+(./presentazione.aux)
+\openout1 = `presentazione.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1059,17 +1356,17 @@ LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count158
-\scratchdimen=\dimen259
-\scratchbox=\box53
-\nofMPsegments=\count159
-\nofMParguments=\count160
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count161
-\MPscratchDim=\dimen260
-\MPnumerator=\count162
-\makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count360
+\scratchdimen=\dimen263
+\scratchbox=\box54
+\nofMPsegments=\count361
+\nofMParguments=\count362
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen264
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1088,8 +1385,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 54.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring OFF on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1097,68 +1394,68 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count164
+\c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
-(./QuantumMetrology.out) (./QuantumMetrology.out)
-\@outlinefile=\write5
-\openout5 = `QuantumMetrology.out'.
+(./presentazione.out) (./presentazione.out)
+\@outlinefile=\write7
+\openout7 = `presentazione.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 54.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 73.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 73.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 54.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 54.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 54.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 73.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 54.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 54.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 54.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 73.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 54.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 54.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 54.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 73.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 73.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 54.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 73.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 54.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 54.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 54.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 54.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 54.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 73.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
-4.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-54.
+73.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 54.
+ut line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1183,150 +1480,447 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./QuantumMetrology.nav) [1
+)
+LaTeX Info: Redefining \celsius on input line 73.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 73.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 73.
+Package gensymb Info: Using \Omega for \ohm on input line 73.
+
+Package gensymb Warning: Not defining \micro.
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout6 = `presentazione.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'presentazione.bbl' found.
+(./presentazione.bbl)
+Package biblatex Info: Reference section=0 on input line 73.
+Package biblatex Info: Reference segment=0 on input line 73.
+ (./presentazione.nav) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 107.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 102.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Try loading font information for U+msb on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 102.
+line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<parameterEstimation.png, id=84, 420.06938pt x 227.34938pt>
-File: parameterEstimation.png Graphic file (type png)
-<use parameterEstimation.png>
-Package pdftex.def Info: parameterEstimation.png  used on input line 102.
-(pdftex.def)             Requested size: 210.03418pt x 113.67441pt.
+<immagini/IO.png, id=56, 341.77687pt x 105.39375pt>
+File: immagini/IO.png Graphic file (type png)
+<use immagini/IO.png>
+Package pdftex.def Info: immagini/IO.png  used on input line 107.
+(pdftex.def)             Requested size: 136.70831pt x 42.15674pt.
 
-[3
+[2
 
- <./parameterEstimation.png>] [4
+ <./immagini/IO.png>]
+<immagini/waveplates.jpeg, id=90, 308.15125pt x 164.615pt>
+File: immagini/waveplates.jpeg Graphic file (type jpg)
+<use immagini/waveplates.jpeg>
+Package pdftex.def Info: immagini/waveplates.jpeg  used on input line 140.
+(pdftex.def)             Requested size: 76.37463pt x 40.80002pt.
+<immagini/Rz.png, id=91, 157.33781pt x 75.28125pt>
+File: immagini/Rz.png Graphic file (type png)
+<use immagini/Rz.png>
+Package pdftex.def Info: immagini/Rz.png  used on input line 140.
+(pdftex.def)             Requested size: 56.84802pt x 27.20001pt.
+<immagini/beamsplitter.png, id=92, 713.66624pt x 433.62pt>
+File: immagini/beamsplitter.png Graphic file (type png)
+<use immagini/beamsplitter.png>
+Package pdftex.def Info: immagini/beamsplitter.png  used on input line 140.
+(pdftex.def)             Requested size: 89.52385pt x 54.40002pt.
+<immagini/Ry.png, id=93, 210.7875pt x 82.80937pt>
+File: immagini/Ry.png Graphic file (type png)
+<use immagini/Ry.png>
+Package pdftex.def Info: immagini/Ry.png  used on input line 140.
+(pdftex.def)             Requested size: 69.23523pt x 27.20001pt.
+<immagini/mirror.jpg, id=94, 72.27pt x 54.2025pt>
+File: immagini/mirror.jpg Graphic file (type jpg)
+<use immagini/mirror.jpg>
+Package pdftex.def Info: immagini/mirror.jpg  used on input line 140.
+(pdftex.def)             Requested size: 72.53667pt x 54.40002pt.
+ [3
+
+ <./immagini/waveplates.jpeg> <./immagini/Rz.png> <./immagini/beamsplitter.png>
+ <./immagini/Ry.png> <./immagini/mirror.jpg>]
+<immagini/decomposition2.jpg, id=126, 244.95053pt x 123.4346pt>
+File: immagini/decomposition2.jpg Graphic file (type jpg)
+<use immagini/decomposition2.jpg>
+Package pdftex.def Info: immagini/decomposition2.jpg  used on input line 159.
+(pdftex.def)             Requested size: 244.94992pt x 123.43428pt.
+
+[4
+
+ <./immagini/decomposition2.jpg>] [5
 
 ]
-<example.png, id=150, 532.99126pt x 164.86594pt>
-File: example.png Graphic file (type png)
-<use example.png>
-Package pdftex.def Info: example.png  used on input line 157.
-(pdftex.def)             Requested size: 266.49498pt x 82.43275pt.
- [5
-
- <./example.png>]
-<channel.png, id=180, 380.17032pt x 112.16907pt>
-File: channel.png Graphic file (type png)
-<use channel.png>
-Package pdftex.def Info: channel.png  used on input line 173.
-(pdftex.def)             Requested size: 190.08469pt x 56.08438pt.
+<immagini/polarization.png, id=180, 361.35pt x 165.61874pt>
+File: immagini/polarization.png Graphic file (type png)
+<use immagini/polarization.png>
+Package pdftex.def Info: immagini/polarization.png  used on input line 197.
+(pdftex.def)             Requested size: 108.40584pt x 49.686pt.
+<immagini/dualRail.png, id=181, 490.08093pt x 57.96657pt>
+File: immagini/dualRail.png Graphic file (type png)
+<use immagini/dualRail.png>
+Package pdftex.def Info: immagini/dualRail.png  used on input line 197.
+(pdftex.def)             Requested size: 245.03987pt x 28.9832pt.
  [6
 
- <./channel.png>]
-<POVM.png, id=209, 284.56313pt x 178.41656pt>
-File: POVM.png Graphic file (type png)
-<use POVM.png>
-Package pdftex.def Info: POVM.png  used on input line 196.
-(pdftex.def)             Requested size: 142.2812pt x 89.20805pt.
+ <./immagini/polarization.png> <./immagini/dualRail.png>]
+<immagini/conversion2.png, id=212, 1029.8475pt x 679.53876pt>
+File: immagini/conversion2.png Graphic file (type png)
+<use immagini/conversion2.png>
+Package pdftex.def Info: immagini/conversion2.png  used on input line 211.
+(pdftex.def)             Requested size: 257.46124pt x 169.88428pt.
+ [7
 
-[7
+ <./immagini/conversion2.png>]
+<immagini/coherent.png, id=240, 414.79968pt x 224.33812pt>
+File: immagini/coherent.png Graphic file (type png)
+<use immagini/coherent.png>
+Package pdftex.def Info: immagini/coherent.png  used on input line 234.
+(pdftex.def)             Requested size: 165.91693pt x 89.73366pt.
+ [8
 
- <./POVM.png>] [8
-
-]
-<traiettoria.png, id=265, 282.88542pt x 120.17468pt>
-File: traiettoria.png Graphic file (type png)
-<use traiettoria.png>
-Package pdftex.def Info: traiettoria.png  used on input line 277.
-(pdftex.def)             Requested size: 198.01845pt x 84.12169pt.
- [9
-
- <./traiettoria.png>] [10
-
-] [11
-
-] [12
+ <./immagini/coherent.png>] [9
 
 ]
-<entanglement.png, id=372, 429.85594pt x 151.3153pt>
-File: entanglement.png Graphic file (type png)
-<use entanglement.png>
-Package pdftex.def Info: entanglement.png  used on input line 344.
-(pdftex.def)             Requested size: 214.92744pt x 75.65746pt.
- [13
+<immagini/CrossKerr.png, id=296, 1020.81375pt x 739.76375pt>
+File: immagini/CrossKerr.png Graphic file (type png)
+<use immagini/CrossKerr.png>
+Package pdftex.def Info: immagini/CrossKerr.png  used on input line 261.
+(pdftex.def)             Requested size: 173.53604pt x 125.75816pt.
+ [10
 
- <./entanglement.png>] [14
-
-] [15
-
-] [16
+ <./immagini/CrossKerr.png>] [11
 
 ]
-<adattivo.png, id=481, 261.22594pt x 173.89969pt>
-File: adattivo.png Graphic file (type png)
-<use adattivo.png>
-Package pdftex.def Info: adattivo.png  used on input line 463.
-(pdftex.def)             Requested size: 130.61264pt x 86.94962pt.
+<immagini/feedforward.png, id=351, 315.42844pt x 155.83218pt>
+File: immagini/feedforward.png Graphic file (type png)
+<use immagini/feedforward.png>
+Package pdftex.def Info: immagini/feedforward.png  used on input line 317.
+(pdftex.def)             Requested size: 157.71382pt x 77.9159pt.
+ [12
+
+ <./immagini/feedforward.png>]
+<immagini/single.png, id=380, 357.58594pt x 196.48407pt>
+File: immagini/single.png Graphic file (type png)
+<use immagini/single.png>
+Package pdftex.def Info: immagini/single.png  used on input line 339.
+(pdftex.def)             Requested size: 178.79253pt x 98.24179pt.
+<immagini/U.png, id=381, 380.17032pt x 140.02313pt>
+File: immagini/U.png Graphic file (type png)
+<use immagini/U.png>
+Package pdftex.def Info: immagini/U.png  used on input line 339.
+(pdftex.def)             Requested size: 190.08469pt x 70.01138pt.
+[13
+
+ <./immagini/single.png> <./immagini/U.png>]
+<immagini/cnotcsign.png, id=411, 1292.83pt x 230.8625pt>
+File: immagini/cnotcsign.png Graphic file (type png)
+<use immagini/cnotcsign.png>
+Package pdftex.def Info: immagini/cnotcsign.png  used on input line 358.
+(pdftex.def)             Requested size: 323.20671pt x 57.71547pt.
+
+Overfull \hbox (15.91684pt too wide) in paragraph at lines 358--358
+ [] 
+ []
+
+[14
+
+ <./immagini/cnotcsign.png>]
+<immagini/ns.png, id=439, 1284.8pt x 781.92125pt>
+File: immagini/ns.png Graphic file (type png)
+<use immagini/ns.png>
+Package pdftex.def Info: immagini/ns.png  used on input line 375.
+(pdftex.def)             Requested size: 256.95544pt x 156.38147pt.
+
+Overfull \vbox (2.50574pt too high) detected at line 375
+ []
+
+[15
+
+ <./immagini/ns.png>] [16
+
+]
+<immagini/csign.png, id=493, 1081.03876pt x 477.785pt>
+File: immagini/csign.png Graphic file (type png)
+<use immagini/csign.png>
+Package pdftex.def Info: immagini/csign.png  used on input line 405.
+(pdftex.def)             Requested size: 270.25902pt x 119.44595pt.
  [17
 
- <./adattivo.png>] [18
+ <./immagini/csign.png>]
+<immagini/smile.png, id=520, 225.84375pt x 225.84375pt>
+File: immagini/smile.png Graphic file (type png)
+<use immagini/smile.png>
+Package pdftex.def Info: immagini/smile.png  used on input line 424.
+(pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
+File: immagini/smile.png Graphic file (type png)
+<use immagini/smile.png>
+Package pdftex.def Info: immagini/smile.png  used on input line 424.
+(pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
+ [18
 
-] [19
+ <./immagini/smile.png>]
+<immagini/teleCartoon.png, id=548, 496.10344pt x 185.94469pt>
+File: immagini/teleCartoon.png Graphic file (type png)
+<use immagini/teleCartoon.png>
+Package pdftex.def Info: immagini/teleCartoon.png  used on input line 442.
+(pdftex.def)             Requested size: 297.66435pt x 111.56766pt.
+ [19
 
-] [20
+ <./immagini/teleCartoon.png>]
+<immagini/tele.png, id=577, 1438.37375pt x 732.7375pt>
+File: immagini/tele.png Graphic file (type png)
+<use immagini/tele.png>
+Package pdftex.def Info: immagini/tele.png  used on input line 456.
+(pdftex.def)             Requested size: 287.66965pt x 146.5449pt.
+ [20
 
-] [21
+ <./immagini/tele.png>]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 474.
 
-] [22
 
-] [23
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [21
 
 ]
-<strategia.png, id=667, 328.22626pt x 130.23656pt>
-File: strategia.png Graphic file (type png)
-<use strategia.png>
-Package pdftex.def Info: strategia.png  used on input line 624.
-(pdftex.def)             Requested size: 229.7568pt x 91.16496pt.
+<immagini/tele2.png, id=632, 1463.4675pt x 632.3625pt>
+File: immagini/tele2.png Graphic file (type png)
+<use immagini/tele2.png>
+Package pdftex.def Info: immagini/tele2.png  used on input line 488.
+(pdftex.def)             Requested size: 292.68831pt x 126.47026pt.
+ [22
 
-[24
+ <./immagini/tele2.png>]
+<immagini/railColour.png, id=659, 1290.8225pt x 588.1975pt>
+File: immagini/railColour.png Graphic file (type png)
+<use immagini/railColour.png>
+Package pdftex.def Info: immagini/railColour.png  used on input line 505.
+(pdftex.def)             Requested size: 322.70483pt x 147.04901pt.
 
- <./strategia.png>] [25
+Overfull \hbox (15.41496pt too wide) in paragraph at lines 505--505
+ [] 
+ []
 
-] [26
+[23
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-\tf@nav=\write6
-\openout6 = `QuantumMetrology.nav'.
+ <./immagini/railColour.png>]
+<immagini/entaGeneration.png, id=686, 579.16376pt x 338.26375pt>
+File: immagini/entaGeneration.png Graphic file (type png)
+<use immagini/entaGeneration.png>
+Package pdftex.def Info: immagini/entaGeneration.png  used on input line 523.
+(pdftex.def)             Requested size: 115.83069pt x 67.65154pt.
+ [24
 
-\tf@toc=\write7
-\openout7 = `QuantumMetrology.toc'.
+ <./immagini/entaGeneration.png>]
+<immagini/tele5.png, id=714, 771.88374pt x 274.02374pt>
+File: immagini/tele5.png Graphic file (type png)
+<use immagini/tele5.png>
+Package pdftex.def Info: immagini/tele5.png  used on input line 539.
+(pdftex.def)             Requested size: 308.74802pt x 109.60754pt.
 
-\tf@snm=\write8
-\openout8 = `QuantumMetrology.snm'.
+Overfull \hbox (1.45815pt too wide) in paragraph at lines 539--539
+ [] 
+ []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 674.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 674.
- (./QuantumMetrology.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 674.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 674.
-Package rerunfilecheck Info: File `QuantumMetrology.out' has not changed.
+[25
+
+ <./immagini/tele5.png>] [26
+
+]
+<immagini/together.png, id=768, 1451.4225pt x 753.81625pt>
+File: immagini/together.png Graphic file (type png)
+<use immagini/together.png>
+Package pdftex.def Info: immagini/together.png  used on input line 571.
+(pdftex.def)             Requested size: 290.27936pt x 150.76057pt.
+ [27
+
+ <./immagini/together.png>] [28
+
+] [29
+
+]
+<immagini/fourier2.png, id=850, 520.19344pt x 240.14719pt>
+File: immagini/fourier2.png Graphic file (type png)
+<use immagini/fourier2.png>
+Package pdftex.def Info: immagini/fourier2.png  used on input line 621.
+(pdftex.def)             Requested size: 312.11845pt x 144.0894pt.
+
+Overfull \hbox (4.82858pt too wide) in paragraph at lines 621--621
+ [] 
+ []
+
+[30
+
+ <./immagini/fourier2.png>]
+<immagini/fourier.png, id=878, 1561.835pt x 533.995pt>
+File: immagini/fourier.png Graphic file (type png)
+<use immagini/fourier.png>
+Package pdftex.def Info: immagini/fourier.png  used on input line 636.
+(pdftex.def)             Requested size: 312.36147pt x 106.7971pt.
+
+Overfull \hbox (5.0716pt too wide) in paragraph at lines 636--636
+ [] 
+ []
+
+[31
+
+ <./immagini/fourier.png>] [32
+
+] [33
+
+] [34
+
+]
+<immagini/cv.png, id=985, 1181.41376pt x 378.41376pt>
+File: immagini/cv.png Graphic file (type png)
+<use immagini/cv.png>
+Package pdftex.def Info: immagini/cv.png  used on input line 727.
+(pdftex.def)             Requested size: 295.3527pt x 94.6032pt.
+ [35
+
+ <./immagini/cv.png>]
+<immagini/cluster2.png, id=1013, 376.40625pt x 301.125pt>
+File: immagini/cluster2.png Graphic file (type png)
+<use immagini/cluster2.png>
+Package pdftex.def Info: immagini/cluster2.png  used on input line 742.
+(pdftex.def)             Requested size: 150.55983pt x 120.44786pt.
+ [36
+
+ <./immagini/cluster2.png>] [37
+
+]
+<immagini/integrated.png, id=1069, 1555.8125pt x 312.16624pt>
+File: immagini/integrated.png Graphic file (type png)
+<use immagini/integrated.png>
+Package pdftex.def Info: immagini/integrated.png  used on input line 792.
+(pdftex.def)             Requested size: 311.15698pt x 62.43213pt.
+
+Overfull \hbox (3.86711pt too wide) in paragraph at lines 792--792
+ [] 
+ []
+
+[38
+
+ <./immagini/integrated.png>]
+<immagini/spdc.png, id=1097, 1110.39844pt x 447.92343pt>
+File: immagini/spdc.png Graphic file (type png)
+<use immagini/spdc.png>
+Package pdftex.def Info: immagini/spdc.png  used on input line 816.
+(pdftex.def)             Requested size: 222.07574pt x 89.5831pt.
+ [39
+
+ <./immagini/spdc.png>]
+<immagini/teleIon.png, id=1125, 476.53032pt x 127.22531pt>
+File: immagini/teleIon.png Graphic file (type png)
+<use immagini/teleIon.png>
+Package pdftex.def Info: immagini/teleIon.png  used on input line 835.
+(pdftex.def)             Requested size: 238.26457pt x 63.61249pt.
+ [40
+
+ <./immagini/teleIon.png>]
+<immagini/come.jpg, id=1154, 821.0675pt x 217.81375pt>
+File: immagini/come.jpg Graphic file (type jpg)
+<use immagini/come.jpg>
+Package pdftex.def Info: immagini/come.jpg  used on input line 847.
+(pdftex.def)             Requested size: 328.42119pt x 87.12395pt.
+
+Overfull \hbox (21.13132pt too wide) in paragraph at lines 847--847
+ [] 
+ []
+
+[41
+
+ <./immagini/come.jpg>]
+<immagini/modular.png, id=1181, 508.14844pt x 189.70876pt>
+File: immagini/modular.png Graphic file (type png)
+<use immagini/modular.png>
+Package pdftex.def Info: immagini/modular.png  used on input line 863.
+(pdftex.def)             Requested size: 254.0736pt x 94.85414pt.
+ [42
+
+ <./immagini/modular.png>] [43
+
+]
+<immagini/Bosonsampling3.jpg, id=1238, 1284.8pt x 722.7pt>
+File: immagini/Bosonsampling3.jpg Graphic file (type jpg)
+<use immagini/Bosonsampling3.jpg>
+Package pdftex.def Info: immagini/Bosonsampling3.jpg  used on input line 898.
+(pdftex.def)             Requested size: 256.95544pt x 144.53743pt.
+ [44
+
+ <./immagini/Bosonsampling3.jpg>]
+<immagini/cavityQED.png, id=1266, 475.02469pt x 306.39468pt>
+File: immagini/cavityQED.png Graphic file (type png)
+<use immagini/cavityQED.png>
+Package pdftex.def Info: immagini/cavityQED.png  used on input line 915.
+(pdftex.def)             Requested size: 237.51175pt x 153.19696pt.
+ [45
+
+ <./immagini/cavityQED.png>] [46
+
+]
+<immagini/zeno.png, id=1319, 1542.76375pt x 288.07625pt>
+File: immagini/zeno.png Graphic file (type png)
+<use immagini/zeno.png>
+Package pdftex.def Info: immagini/zeno.png  used on input line 951.
+(pdftex.def)             Requested size: 308.54729pt x 57.61421pt.
+
+Overfull \hbox (1.25742pt too wide) in paragraph at lines 951--951
+ [] 
+ []
+
+[47
+
+ <./immagini/zeno.png>]
+\tf@nav=\write8
+\openout8 = `presentazione.nav'.
+
+\tf@toc=\write9
+\openout9 = `presentazione.toc'.
+
+\tf@snm=\write10
+\openout10 = `presentazione.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 954.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 954.
+ (./presentazione.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 954.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 954.
+Package rerunfilecheck Info: File `presentazione.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'presentazione.run.xml'.
+\openout1 = `presentazione.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 17609 strings out of 492982
- 332707 string characters out of 6134895
- 406905 words of memory out of 5000000
- 20697 multiletter control sequences out of 15000+600000
- 12314 words of font info for 44 fonts, out of 8000000 for 9000
+ 24717 strings out of 492982
+ 465374 string characters out of 6134895
+ 894676 words of memory out of 5000000
+ 27642 multiletter control sequences out of 15000+600000
+ 11634 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,57p,895b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,57p,807b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
@@ -1335,18 +1929,16 @@ f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-si8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on QuantumMetrology.pdf (26 pages, 420560 bytes).
+/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on presentazione.pdf (47 pages, 2167931 bytes).
 PDF statistics:
- 827 PDF objects out of 1000 (max. 8388607)
- 741 compressed objects within 8 object streams
- 54 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1419 PDF objects out of 1440 (max. 8388607)
+ 1267 compressed objects within 13 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 

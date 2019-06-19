@@ -1,0 +1,155 @@
+\usepackage{etex}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper]{geometry}
+\usepackage[pdftex]{graphicx}
+
+%aggiunte di gimmy:
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{mathrsfs}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{siunitx}
+%
+
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{paralist}
+\usepackage{subfig}
+\usepackage{array}
+\usepackage{xy}
+\usepackage{multicol}
+%\usepackage{slashbox}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[T1,OT1]{fontenc} 
+\usepackage{chemfig}
+\usepackage{epigraph}
+\usepackage{textcomp}
+\usepackage[makeroom]{cancel}
+\usepackage{enumitem}
+\usepackage{braket}
+
+\usepackage{grffile}
+\usepackage{tikz}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes.geometric,calc}
+
+\usetikzlibrary{arrows}
+%\topmargin 0cm
+%\oddsidemargin 0cm
+%\evensidemargin 0cm
+%\textwidth 16.5cm
+%\textheight	23.5cm
+%\marginparwidth 2cm
+%\marginparpush 2cm
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Propriety}
+\newtheorem{post}[thm]{Postulate}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{prob}{Problem}[section]
+%\newtheorem{hint}{Suggerimento}[section]
+\newtheorem{sol}{Solution}[section]
+\newtheorem*{obs}{Observation}
+
+\theoremstyle{remark}
+\newtheorem*{note}{Note}
+
+%abbreviazoni molto utili
+\def\dsum{\ensuremath{\displaystyle\sum}}
+\def\dprod{\ensuremath{\displaystyle\prod}}
+\def\dint{\ensuremath{\displaystyle\int}}
+\def\doint{\ensuremath{\displaystyle\oint}}
+\def\dfrac{\ensuremath{\displaystyle\frac}}
+\def\b{\ensuremath{\widehat}}
+\def\R{\ensuremath{\mathbb{R}}}
+\def\d{\ensuremath{\partial}}
+\def\L{\ensuremath{\mathcal{L}}}
+\def\C{\ensuremath{\mathbb{C}}}
+\def\N{\ensuremath{\mathbb{N}}}
+\def\Lp{\ensuremath{\mathbb{L}}} %L di spazio Lp
+\def\grad{\vec \nabla}
+\def\div{\vec \nabla \cdot}
+\def\rot{\vec \nabla \times}
+\newcommand{\dbar}{\mbox{\normalfont\fontencoding{T1}\upshape\char158}} %per la d tagliata
+
+%Sono inutili ma volevo provarli
+\newcommand{\deriv}[2]{\dfrac{d #1}{d #2}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\pderiv}[2]{\dfrac{\d #1}{\d #2}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\def \cov {\text{Cov} \left( \theta \right) }
+\def \id {\mathds{1}}
+\def \abs {\text{Abs}}
+\def \wt {\widetilde}
+\def \figPOVM {\inf_{POVM} \sup_{G} \frac{\tr \left( G \cdot \cov \right)} { d C_S \left( G \right)}}
+\def \figState {\inf_{\rho} \sup_{G} \frac{\tr \left[ G F^{-1} \left( \rho \right) \right]}{\tr \left[ G F^{-1} \left( \rho_G \right) \right]}}
+
+%per le stelline
+\newcommand\score[2]{
+\pgfmathsetmacro\pgfxa{#1+1}
+\tikzstyle{scorestars}=[star, star points=5, star point ratio=2.25, draw,inner sep=0.15em,anchor=outer point 3]
+\begin{tikzpicture}[baseline]
+  \foreach \i in {1,...,#2} {
+    \pgfmathparse{(\i<=#1?"yellow":"gray")}
+    \edef\starcolor{\pgfmathresult}
+    \draw (\i*1em,0) node[name=star\i,scorestars,fill=\starcolor]  {};
+   }
+   \pgfmathparse{(#1>int(#1)?int(#1+1):0}
+   \let\partstar=\pgfmathresult
+   \ifnum\partstar>0
+     \pgfmathsetmacro\starpart{#1-(int(#1))}
+     \path [clip] ($(star\partstar.outer point 3)!(star\partstar.outer point 2)!(star\partstar.outer point 4)$) rectangle 
+    ($(star\partstar.outer point 2 |- star\partstar.outer point 1)!\starpart!(star\partstar.outer point 1 -| star\partstar.outer point 5)$);
+     \fill (\partstar*1em,0) node[scorestars,fill=yellow]  {};
+   \fi
+
+,\end{tikzpicture}
+}
+
+
+%%5%%%% comandi busoni
+ \def\be   {\begin{equation*}}   \def\ee   {\end{equation*}}
+ \def\ba   {\begin{array}}      \def\ea   {\end{array}}
+ \def\bea  {\begin{eqnarray*}}   \def\eea  {\end{eqnarray*}}
+ \def\bean {\begin{eqnarray*}}  \def\eean {\end{eqnarray*}}
+ \def\nn{\nonumber}
+ 
+%%%% comandi matrici di pauli 
+\def\sx {$\sigma_x$}
+\def\sy {$\sigma_y$}
+\def\sz {$\sigma_z$}
+
+\def\id { \mathds{1} }
+
+%%%% Comando QFI
+\newcommand{\qfi}[1]{ F \left( #1 \right)}
+\newcommand{\iqfi}[1]{ F \left( #1 \right) }
+
+%%%%
+
+%%% Comando stato
+\def\state {| \psi \rangle \! \langle \psi |}
+
+\DeclareMathOperator{\tr}{Tr}
+	
+ 
+ %%%% per fare l'indice analitico
+\makeindex

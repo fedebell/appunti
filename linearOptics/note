@@ -1,0 +1,9 @@
+-1 slide mostra due grafici relativi alle capacità computazionali dei computer quantistici basati sulla materia e quelli basati sui fotoni.
+Quelli basati sui fotoni per via dell'inefficienza dei detector e della difficoltà di costruire fonti a singolo fotone affidabili. 
+-1 slide mostra due coni. Serve per fare ulteriormente capire come se uno riesce a produrre i primi gate su qubit di materia ha probabilmente una lunga strada da fare per arrivare a universal QC, mentre forse con i qubit fotonici la cosa è opposta e la strada da fare è al contrario. Difficile all'unizio per produrre i primi qubit e le prme porte ma forse più scalabile. La struttura conica potrebbe essere quella dell'inferno di dante. e quella del purgatorio. Non c'è l'analogia esatta con il paradiso.
+-Nota che per realizzare porte tipo CNOT non usiamo coplicati cristalli non lineari, fonti di decoerenza e poco scalabili ma usiamo solo elementi lineari e misure (non lineari). Inoltre è necessario il fast-forward di informazione elaborata classicamente.
+- all-optical implementation of such systems
+can increase the operational bandwidth beyond THz in principle, utimately enabling large-scale fault-tolerant universal
+quantum computers with ultra-high operation frequency
+-ci metto introduzione alla codifica
+-Ci metto innanzitutto il terema klm e la costruzione di gate a sue qubit con la tecnica del teletrasporto
